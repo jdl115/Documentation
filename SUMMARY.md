@@ -2,14 +2,7 @@
 
 * [Overview](README.md)
 * [Terms](terms/index.md)
-    * [AdSpot](terms/adspot-term.md)
-    * [AdSpot Volume](terms/adspot-volume-term.md)
-    * [Generic Asset](terms/generic-asset-term.md)
-    * [Branded Asset](terms/branded-asset-term.md)
-    * [Synchronization](terms/sync-term.md)
-    * [Versions](terms/versions-term.md)
-    * [Engagement](terms/engagement-term.md)
-    * [Viewability](terms/viewability-term.md)
+    {% include "./terms/toc.md" %}
 * [SmartTab](smarttab.md)
 * [Branded asset editor](asset-editor.md)
 * [Trivver app](trivver-app.md)
