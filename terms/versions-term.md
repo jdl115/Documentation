@@ -1,6 +1,5 @@
----
-uid: unity-versions
----
+
+## Game version and publishing
 
 When you release your Unity game on any store, it is common to freeze all Trivver configuration (AdSpot list and categories) for that release. Otherwise it is possible to break the game for existing users after new synchronization.  
 For this purpose we have game versions.  You can create new versions in developer dashboard.
@@ -15,8 +14,6 @@ After you created a new game, by default new version "1" is added to the game. Y
 You can edit it's title (version itself) notes and change it's status to published. Also you can add new version.
 
 ![Game version edit]( ../../images/dashboard_game_version_edit.png "Game version edit")  
-
-
 
 In Unity sdk Trivver Settings you can select created version as current one:  
 ![Trivver settings]( ../../images/trivver_settings.png "Game version")

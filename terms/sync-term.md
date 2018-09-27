@@ -1,6 +1,4 @@
----
-uid: unity-sync
----
+## Synchronization
 
 After [AdSpots](xref:unity-adspot-term) and [Trivver settings](xref:unity-settings-term) are set up properly you have to make Synchronization. This process will collect data about all spots in your project validate it (check if there are any spots without categories and all guid's are unique) and send to the server. After this process you can see all your spots in the Developer Dashboard.  
 
