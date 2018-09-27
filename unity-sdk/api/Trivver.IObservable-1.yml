@@ -1,0 +1,628 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.IObservable`1
+  commentId: T:Trivver.IObservable`1
+  id: IObservable`1
+  parent: Trivver
+  children:
+  - Trivver.IObservable`1.Subscribe(Trivver.IObserver{`0})
+  langs:
+  - csharp
+  - vb
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: Trivver.IObservable<T>
+  type: Interface
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObservable.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: IObservable
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObservable.cs
+    startLine: 11
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nGeneric interface for entities you can subscribe on. E.g. job, task, resource acquisition\nObserver design pattern: (https://msdn.microsoft.com/ru-ru/library/ee850490(v=vs.110).aspx)\n"
+  example: []
+  syntax:
+    content: public interface IObservable<T>
+    content.vb: Public Interface IObservable(Of T)
+    typeParameters:
+    - id: T
+      description: ''
+  extensionMethods:
+  - Trivver.IObservable`1.Trivver.IObservableExtensions.Subscribe``1(System.Action{{T}},Trivver.OnInterruptedHandler)
+  - Trivver.IObservable`1.Trivver.IObservableExtensions.Subscribe``1(System.Action{{T}},Trivver.OnInterruptedHandler,System.Action{System.Single})
+  nameWithType.vb: IObservable(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Trivver.IObservable(Of T)
+  name.vb: IObservable(Of T)
+- uid: Trivver.IObservable`1.Subscribe(Trivver.IObserver{`0})
+  commentId: M:Trivver.IObservable`1.Subscribe(Trivver.IObserver{`0})
+  id: Subscribe(Trivver.IObserver{`0})
+  parent: Trivver.IObservable`1
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(IObserver<T>)
+  nameWithType: IObservable<T>.Subscribe(IObserver<T>)
+  fullName: Trivver.IObservable<T>.Subscribe(Trivver.IObserver<T>)
+  type: Method
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObservable.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Subscribe
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObservable.cs
+    startLine: 24
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nSubscribe observer\n"
+  example: []
+  syntax:
+    content: IDisposable Subscribe(IObserver<T> observer)
+    content.vb: Function Subscribe(observer As IObserver(Of T)) As IDisposable
+    parameters:
+    - id: observer
+      type: Trivver.IObserver{{T}}
+      description: ''
+    return:
+      type: System.IDisposable
+      description: "\nUnsubscriber -- call Dispose() to unsubscribe\n\nProper implementation will cancel resource acquisition when last subscriber will call Unsubscriber.Dispose();\nIt will trigger cancellation (interruption) mechanism, but no one will be notified about it (OnInterrupted call) since \nas it is stated it is triggered when there are no subscribers.\n"
+  overload: Trivver.IObservable`1.Subscribe*
+  nameWithType.vb: IObservable(Of T).Subscribe(IObserver(Of T))
+  fullName.vb: Trivver.IObservable(Of T).Subscribe(Trivver.IObserver(Of T))
+  name.vb: Subscribe(IObserver(Of T))
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: Trivver.IObservable`1.Trivver.IObservableExtensions.Subscribe``1(System.Action{{T}},Trivver.OnInterruptedHandler)
+  commentId: M:Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler)
+  parent: Trivver.IObservableExtensions
+  definition: Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler)
+  name: Subscribe<T>(Action<T>, OnInterruptedHandler)
+  nameWithType: IObservableExtensions.Subscribe<T>(Action<T>, OnInterruptedHandler)
+  fullName: Trivver.IObservableExtensions.Subscribe<T>(System.Action<T>, Trivver.OnInterruptedHandler)
+  nameWithType.vb: IObservableExtensions.Subscribe(Of T)(Action(Of T), OnInterruptedHandler)
+  fullname.vb: Trivver.IObservableExtensions.Subscribe(Of T)(System.Action(Of T), Trivver.OnInterruptedHandler)
+  name.vb: Subscribe(Of T)(Action(Of T), OnInterruptedHandler)
+  spec.csharp:
+  - uid: Trivver.IObservableExtensions.Subscribe``1(System.Action{``0},Trivver.OnInterruptedHandler)
+    name: Subscribe<T>
+    nameWithType: IObservableExtensions.Subscribe<T>
+    fullName: Trivver.IObservableExtensions.Subscribe<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.OnInterruptedHandler
+    name: OnInterruptedHandler
+    nameWithType: OnInterruptedHandler
+    fullName: Trivver.OnInterruptedHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.IObservableExtensions.Subscribe``1(System.Action{``0},Trivver.OnInterruptedHandler)
+    name: Subscribe(Of T)
+    nameWithType: IObservableExtensions.Subscribe(Of T)
+    fullName: Trivver.IObservableExtensions.Subscribe(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.OnInterruptedHandler
+    name: OnInterruptedHandler
+    nameWithType: OnInterruptedHandler
+    fullName: Trivver.OnInterruptedHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.IObservable`1.Trivver.IObservableExtensions.Subscribe``1(System.Action{{T}},Trivver.OnInterruptedHandler,System.Action{System.Single})
+  commentId: M:Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler,System.Action{System.Single})
+  parent: Trivver.IObservableExtensions
+  definition: Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler,System.Action{System.Single})
+  name: Subscribe<T>(Action<T>, OnInterruptedHandler, Action<Single>)
+  nameWithType: IObservableExtensions.Subscribe<T>(Action<T>, OnInterruptedHandler, Action<Single>)
+  fullName: Trivver.IObservableExtensions.Subscribe<T>(System.Action<T>, Trivver.OnInterruptedHandler, System.Action<System.Single>)
+  nameWithType.vb: IObservableExtensions.Subscribe(Of T)(Action(Of T), OnInterruptedHandler, Action(Of Single))
+  fullname.vb: Trivver.IObservableExtensions.Subscribe(Of T)(System.Action(Of T), Trivver.OnInterruptedHandler, System.Action(Of System.Single))
+  name.vb: Subscribe(Of T)(Action(Of T), OnInterruptedHandler, Action(Of Single))
+  spec.csharp:
+  - uid: Trivver.IObservableExtensions.Subscribe``1(System.Action{``0},Trivver.OnInterruptedHandler,System.Action{System.Single})
+    name: Subscribe<T>
+    nameWithType: IObservableExtensions.Subscribe<T>
+    fullName: Trivver.IObservableExtensions.Subscribe<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.OnInterruptedHandler
+    name: OnInterruptedHandler
+    nameWithType: OnInterruptedHandler
+    fullName: Trivver.OnInterruptedHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.IObservableExtensions.Subscribe``1(System.Action{``0},Trivver.OnInterruptedHandler,System.Action{System.Single})
+    name: Subscribe(Of T)
+    nameWithType: IObservableExtensions.Subscribe(Of T)
+    fullName: Trivver.IObservableExtensions.Subscribe(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.OnInterruptedHandler
+    name: OnInterruptedHandler
+    nameWithType: OnInterruptedHandler
+    fullName: Trivver.OnInterruptedHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler)
+  commentId: M:Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler)
+  isExternal: true
+  name: Subscribe<T>(IObservable<T>, Action<T>, OnInterruptedHandler)
+  nameWithType: IObservableExtensions.Subscribe<T>(IObservable<T>, Action<T>, OnInterruptedHandler)
+  fullName: Trivver.IObservableExtensions.Subscribe<T>(Trivver.IObservable<T>, System.Action<T>, Trivver.OnInterruptedHandler)
+  nameWithType.vb: IObservableExtensions.Subscribe(Of T)(IObservable(Of T), Action(Of T), OnInterruptedHandler)
+  fullname.vb: Trivver.IObservableExtensions.Subscribe(Of T)(Trivver.IObservable(Of T), System.Action(Of T), Trivver.OnInterruptedHandler)
+  name.vb: Subscribe(Of T)(IObservable(Of T), Action(Of T), OnInterruptedHandler)
+  spec.csharp:
+  - uid: Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler)
+    name: Subscribe<T>
+    nameWithType: IObservableExtensions.Subscribe<T>
+    fullName: Trivver.IObservableExtensions.Subscribe<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Trivver.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: Trivver.IObservable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.OnInterruptedHandler
+    name: OnInterruptedHandler
+    nameWithType: OnInterruptedHandler
+    fullName: Trivver.OnInterruptedHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler)
+    name: Subscribe(Of T)
+    nameWithType: IObservableExtensions.Subscribe(Of T)
+    fullName: Trivver.IObservableExtensions.Subscribe(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Trivver.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: Trivver.IObservable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.OnInterruptedHandler
+    name: OnInterruptedHandler
+    nameWithType: OnInterruptedHandler
+    fullName: Trivver.OnInterruptedHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.IObservableExtensions
+  commentId: T:Trivver.IObservableExtensions
+  parent: Trivver
+  isExternal: false
+  name: IObservableExtensions
+  nameWithType: IObservableExtensions
+  fullName: Trivver.IObservableExtensions
+- uid: Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler,System.Action{System.Single})
+  commentId: M:Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler,System.Action{System.Single})
+  isExternal: true
+  name: Subscribe<T>(IObservable<T>, Action<T>, OnInterruptedHandler, Action<Single>)
+  nameWithType: IObservableExtensions.Subscribe<T>(IObservable<T>, Action<T>, OnInterruptedHandler, Action<Single>)
+  fullName: Trivver.IObservableExtensions.Subscribe<T>(Trivver.IObservable<T>, System.Action<T>, Trivver.OnInterruptedHandler, System.Action<System.Single>)
+  nameWithType.vb: IObservableExtensions.Subscribe(Of T)(IObservable(Of T), Action(Of T), OnInterruptedHandler, Action(Of Single))
+  fullname.vb: Trivver.IObservableExtensions.Subscribe(Of T)(Trivver.IObservable(Of T), System.Action(Of T), Trivver.OnInterruptedHandler, System.Action(Of System.Single))
+  name.vb: Subscribe(Of T)(IObservable(Of T), Action(Of T), OnInterruptedHandler, Action(Of Single))
+  spec.csharp:
+  - uid: Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler,System.Action{System.Single})
+    name: Subscribe<T>
+    nameWithType: IObservableExtensions.Subscribe<T>
+    fullName: Trivver.IObservableExtensions.Subscribe<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Trivver.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: Trivver.IObservable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.OnInterruptedHandler
+    name: OnInterruptedHandler
+    nameWithType: OnInterruptedHandler
+    fullName: Trivver.OnInterruptedHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.IObservableExtensions.Subscribe``1(Trivver.IObservable{``0},System.Action{``0},Trivver.OnInterruptedHandler,System.Action{System.Single})
+    name: Subscribe(Of T)
+    nameWithType: IObservableExtensions.Subscribe(Of T)
+    fullName: Trivver.IObservableExtensions.Subscribe(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Trivver.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: Trivver.IObservable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.OnInterruptedHandler
+    name: OnInterruptedHandler
+    nameWithType: OnInterruptedHandler
+    fullName: Trivver.OnInterruptedHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.IObservable`1.Subscribe*
+  commentId: Overload:Trivver.IObservable`1.Subscribe
+  isExternal: false
+  name: Subscribe
+  nameWithType: IObservable<T>.Subscribe
+  fullName: Trivver.IObservable<T>.Subscribe
+  nameWithType.vb: IObservable(Of T).Subscribe
+  fullname.vb: Trivver.IObservable(Of T).Subscribe
+- uid: Trivver.IObserver{{T}}
+  commentId: T:Trivver.IObserver{`0}
+  parent: Trivver
+  definition: Trivver.IObserver`1
+  name: IObserver<T>
+  nameWithType: IObserver<T>
+  fullName: Trivver.IObserver<T>
+  nameWithType.vb: IObserver(Of T)
+  fullname.vb: Trivver.IObserver(Of T)
+  name.vb: IObserver(Of T)
+  spec.csharp:
+  - uid: Trivver.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: Trivver.IObserver
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Trivver.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: Trivver.IObserver
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Trivver.IObserver`1
+  commentId: T:Trivver.IObserver`1
+  isExternal: false
+  name: IObserver<T>
+  nameWithType: IObserver<T>
+  fullName: Trivver.IObserver<T>
+  nameWithType.vb: IObserver(Of T)
+  fullname.vb: Trivver.IObserver(Of T)
+  name.vb: IObserver(Of T)
+  spec.csharp:
+  - uid: Trivver.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: Trivver.IObserver
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Trivver.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: Trivver.IObserver
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

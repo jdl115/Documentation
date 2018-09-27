@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Utils.Logging
+  commentId: N:Utils.Logging
+  id: Utils.Logging
+  children:
+  - Utils.Logging.ILoggingSettings
+  langs:
+  - csharp
+  - vb
+  name: Utils.Logging
+  nameWithType: Utils.Logging
+  fullName: Utils.Logging
+  type: Namespace
+  assemblies:
+  - Trivver.Logging
+references:
+- uid: Utils.Logging.ILoggingSettings
+  commentId: T:Utils.Logging.ILoggingSettings
+  parent: Utils.Logging
+  isExternal: false
+  name: ILoggingSettings
+  nameWithType: ILoggingSettings
+  fullName: Utils.Logging.ILoggingSettings
+- uid: Utils.Logging
+  commentId: N:Utils.Logging
+  isExternal: false
+  name: Utils.Logging
+  nameWithType: Utils.Logging
+  fullName: Utils.Logging

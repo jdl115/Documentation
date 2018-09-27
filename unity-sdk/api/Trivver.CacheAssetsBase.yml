@@ -1,0 +1,570 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.CacheAssetsBase
+  commentId: T:Trivver.CacheAssetsBase
+  id: CacheAssetsBase
+  parent: Trivver
+  children:
+  - Trivver.CacheAssetsBase.currentProgress
+  - Trivver.CacheAssetsBase.currentProgress
+  - Trivver.CacheAssetsBase.CurrentProgress
+  - Trivver.CacheAssetsBase.CurrentProgress
+  - Trivver.CacheAssetsBase.onFinish
+  - Trivver.CacheAssetsBase.onFinish
+  - Trivver.CacheAssetsBase.onProgress
+  - Trivver.CacheAssetsBase.onProgress
+  - Trivver.CacheAssetsBase.OnProgress(System.Single)
+  - Trivver.CacheAssetsBase.OnProgress(System.Single)
+  - Trivver.CacheAssetsBase.startAutomatically
+  - Trivver.CacheAssetsBase.startAutomatically
+  - Trivver.CacheAssetsBase.StartPreloading
+  - Trivver.CacheAssetsBase.StartPreloading
+  - Trivver.CacheAssetsBase.timeoutSeconds
+  - Trivver.CacheAssetsBase.timeoutSeconds
+  langs:
+  - csharp
+  - vb
+  name: CacheAssetsBase
+  nameWithType: CacheAssetsBase
+  fullName: Trivver.CacheAssetsBase
+  type: Class
+  source:
+    id: CacheAssetsBase
+    path: ''
+    startLine: 222
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: 'public abstract class CacheAssetsBase : MonoBehaviour, MonoBehaviour'
+    content.vb: >-
+      Public MustInherit Class CacheAssetsBase
+          Inherits MonoBehaviour
+          Implements MonoBehaviour
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Trivver.CacheAssetsForGame
+  - Trivver.CacheAssetsForScene
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Trivver.CacheAssetsBase.startAutomatically
+  commentId: F:Trivver.CacheAssetsBase.startAutomatically
+  id: startAutomatically
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: startAutomatically
+  nameWithType: CacheAssetsBase.startAutomatically
+  fullName: Trivver.CacheAssetsBase.startAutomatically
+  type: Field
+  source:
+    id: startAutomatically
+    path: ''
+    startLine: 19
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected bool startAutomatically
+    content.vb: Protected startAutomatically As Boolean
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.timeoutSeconds
+  commentId: F:Trivver.CacheAssetsBase.timeoutSeconds
+  id: timeoutSeconds
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: timeoutSeconds
+  nameWithType: CacheAssetsBase.timeoutSeconds
+  fullName: Trivver.CacheAssetsBase.timeoutSeconds
+  type: Field
+  source:
+    id: timeoutSeconds
+    path: ''
+    startLine: 23
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected float timeoutSeconds
+    content.vb: Protected timeoutSeconds As Single
+    return:
+      type: System.Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.onFinish
+  commentId: F:Trivver.CacheAssetsBase.onFinish
+  id: onFinish
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: onFinish
+  nameWithType: CacheAssetsBase.onFinish
+  fullName: Trivver.CacheAssetsBase.onFinish
+  type: Field
+  source:
+    id: onFinish
+    path: ''
+    startLine: 27
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected UnityEvent onFinish
+    content.vb: Protected onFinish As UnityEvent
+    return:
+      type: UnityEvent
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.onProgress
+  commentId: F:Trivver.CacheAssetsBase.onProgress
+  id: onProgress
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: onProgress
+  nameWithType: CacheAssetsBase.onProgress
+  fullName: Trivver.CacheAssetsBase.onProgress
+  type: Field
+  source:
+    id: onProgress
+    path: ''
+    startLine: 31
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected CacheAssetsBase.PreloadingProgressEvent onProgress
+    content.vb: Protected onProgress As CacheAssetsBase.PreloadingProgressEvent
+    return:
+      type: Trivver.CacheAssetsBase.PreloadingProgressEvent
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.currentProgress
+  commentId: F:Trivver.CacheAssetsBase.currentProgress
+  id: currentProgress
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: currentProgress
+  nameWithType: CacheAssetsBase.currentProgress
+  fullName: Trivver.CacheAssetsBase.currentProgress
+  type: Field
+  source:
+    id: currentProgress
+    path: ''
+    startLine: 33
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected float currentProgress
+    content.vb: Protected currentProgress As Single
+    return:
+      type: System.Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.CurrentProgress
+  commentId: P:Trivver.CacheAssetsBase.CurrentProgress
+  id: CurrentProgress
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: CurrentProgress
+  nameWithType: CacheAssetsBase.CurrentProgress
+  fullName: Trivver.CacheAssetsBase.CurrentProgress
+  type: Property
+  source:
+    id: CurrentProgress
+    path: ''
+    startLine: 38
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  summary: "\nReturns progress of the current preloading. 0-1\n"
+  example: []
+  syntax:
+    content: public float CurrentProgress { get; }
+    content.vb: Public ReadOnly Property CurrentProgress As Single
+    parameters: []
+    return:
+      type: System.Single
+  overload: Trivver.CacheAssetsBase.CurrentProgress*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Trivver.CacheAssetsBase.StartPreloading
+  commentId: M:Trivver.CacheAssetsBase.StartPreloading
+  id: StartPreloading
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: StartPreloading()
+  nameWithType: CacheAssetsBase.StartPreloading()
+  fullName: Trivver.CacheAssetsBase.StartPreloading()
+  type: Method
+  source:
+    id: StartPreloading
+    path: ''
+    startLine: 52
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: public abstract void StartPreloading()
+    content.vb: Public MustOverride Sub StartPreloading
+  overload: Trivver.CacheAssetsBase.StartPreloading*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Trivver.CacheAssetsBase.OnProgress(System.Single)
+  commentId: M:Trivver.CacheAssetsBase.OnProgress(System.Single)
+  id: OnProgress(System.Single)
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: OnProgress(Single)
+  nameWithType: CacheAssetsBase.OnProgress(Single)
+  fullName: Trivver.CacheAssetsBase.OnProgress(System.Single)
+  type: Method
+  source:
+    id: OnProgress
+    path: ''
+    startLine: 54
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected void OnProgress(float progress)
+    content.vb: Protected Sub OnProgress(progress As Single)
+    parameters:
+    - id: progress
+      type: System.Single
+  overload: Trivver.CacheAssetsBase.OnProgress*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.startAutomatically
+  commentId: F:Trivver.CacheAssetsBase.startAutomatically
+  id: startAutomatically
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: startAutomatically
+  nameWithType: CacheAssetsBase.startAutomatically
+  fullName: Trivver.CacheAssetsBase.startAutomatically
+  type: Field
+  source:
+    id: startAutomatically
+    path: ''
+    startLine: 234
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected bool startAutomatically
+    content.vb: Protected startAutomatically As Boolean
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.timeoutSeconds
+  commentId: F:Trivver.CacheAssetsBase.timeoutSeconds
+  id: timeoutSeconds
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: timeoutSeconds
+  nameWithType: CacheAssetsBase.timeoutSeconds
+  fullName: Trivver.CacheAssetsBase.timeoutSeconds
+  type: Field
+  source:
+    id: timeoutSeconds
+    path: ''
+    startLine: 238
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected float timeoutSeconds
+    content.vb: Protected timeoutSeconds As Single
+    return:
+      type: System.Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.onFinish
+  commentId: F:Trivver.CacheAssetsBase.onFinish
+  id: onFinish
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: onFinish
+  nameWithType: CacheAssetsBase.onFinish
+  fullName: Trivver.CacheAssetsBase.onFinish
+  type: Field
+  source:
+    id: onFinish
+    path: ''
+    startLine: 242
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected UnityEvent onFinish
+    content.vb: Protected onFinish As UnityEvent
+    return:
+      type: UnityEvent
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.onProgress
+  commentId: F:Trivver.CacheAssetsBase.onProgress
+  id: onProgress
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: onProgress
+  nameWithType: CacheAssetsBase.onProgress
+  fullName: Trivver.CacheAssetsBase.onProgress
+  type: Field
+  source:
+    id: onProgress
+    path: ''
+    startLine: 246
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected CacheAssetsBase.PreloadingProgressEvent onProgress
+    content.vb: Protected onProgress As CacheAssetsBase.PreloadingProgressEvent
+    return:
+      type: Trivver.CacheAssetsBase.PreloadingProgressEvent
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.currentProgress
+  commentId: F:Trivver.CacheAssetsBase.currentProgress
+  id: currentProgress
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: currentProgress
+  nameWithType: CacheAssetsBase.currentProgress
+  fullName: Trivver.CacheAssetsBase.currentProgress
+  type: Field
+  source:
+    id: currentProgress
+    path: ''
+    startLine: 248
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected float currentProgress
+    content.vb: Protected currentProgress As Single
+    return:
+      type: System.Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Trivver.CacheAssetsBase.CurrentProgress
+  commentId: P:Trivver.CacheAssetsBase.CurrentProgress
+  id: CurrentProgress
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: CurrentProgress
+  nameWithType: CacheAssetsBase.CurrentProgress
+  fullName: Trivver.CacheAssetsBase.CurrentProgress
+  type: Property
+  source:
+    id: CurrentProgress
+    path: ''
+    startLine: 253
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  summary: "\nReturns progress of the current preloading. 0-1\n"
+  example: []
+  syntax:
+    content: public float CurrentProgress { get; }
+    content.vb: Public ReadOnly Property CurrentProgress As Single
+    parameters: []
+    return:
+      type: System.Single
+  overload: Trivver.CacheAssetsBase.CurrentProgress*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Trivver.CacheAssetsBase.StartPreloading
+  commentId: M:Trivver.CacheAssetsBase.StartPreloading
+  id: StartPreloading
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: StartPreloading()
+  nameWithType: CacheAssetsBase.StartPreloading()
+  fullName: Trivver.CacheAssetsBase.StartPreloading()
+  type: Method
+  source:
+    id: StartPreloading
+    path: ''
+    startLine: 267
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: public abstract void StartPreloading()
+    content.vb: Public MustOverride Sub StartPreloading
+  overload: Trivver.CacheAssetsBase.StartPreloading*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Trivver.CacheAssetsBase.OnProgress(System.Single)
+  commentId: M:Trivver.CacheAssetsBase.OnProgress(System.Single)
+  id: OnProgress(System.Single)
+  parent: Trivver.CacheAssetsBase
+  langs:
+  - csharp
+  - vb
+  name: OnProgress(Single)
+  nameWithType: CacheAssetsBase.OnProgress(Single)
+  fullName: Trivver.CacheAssetsBase.OnProgress(System.Single)
+  type: Method
+  source:
+    id: OnProgress
+    path: ''
+    startLine: 269
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: protected void OnProgress(float progress)
+    content.vb: Protected Sub OnProgress(progress As Single)
+    parameters:
+    - id: progress
+      type: System.Single
+  overload: Trivver.CacheAssetsBase.OnProgress*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: UnityEvent
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEvent
+- uid: Trivver.CacheAssetsBase.PreloadingProgressEvent
+  commentId: T:Trivver.CacheAssetsBase.PreloadingProgressEvent
+  parent: Trivver
+  isExternal: false
+  name: CacheAssetsBase.PreloadingProgressEvent
+  nameWithType: CacheAssetsBase.PreloadingProgressEvent
+  fullName: Trivver.CacheAssetsBase.PreloadingProgressEvent
+- uid: Trivver.CacheAssetsBase.CurrentProgress*
+  commentId: Overload:Trivver.CacheAssetsBase.CurrentProgress
+  isExternal: false
+  name: CurrentProgress
+  nameWithType: CacheAssetsBase.CurrentProgress
+  fullName: Trivver.CacheAssetsBase.CurrentProgress
+- uid: Trivver.CacheAssetsBase.StartPreloading*
+  commentId: Overload:Trivver.CacheAssetsBase.StartPreloading
+  isExternal: false
+  name: StartPreloading
+  nameWithType: CacheAssetsBase.StartPreloading
+  fullName: Trivver.CacheAssetsBase.StartPreloading
+- uid: Trivver.CacheAssetsBase.OnProgress*
+  commentId: Overload:Trivver.CacheAssetsBase.OnProgress
+  isExternal: false
+  name: OnProgress
+  nameWithType: CacheAssetsBase.OnProgress
+  fullName: Trivver.CacheAssetsBase.OnProgress

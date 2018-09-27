@@ -1,0 +1,36 @@
+---
+uid: unreal-adspot
+---
+
+AdSpot is a center of Trivver Unreal SDK. In general it is a place for ads - an area in your game where you want [branded asset](xref:unity-branded-asset-term) to be loaded and displayed. AdSpot defines which [branded asset](xref:unity-branded-asset-term) will be loaded in it (by Categories) and how this asset will be positioned, aligned and scaled (if needed).  
+In AdSpot properties you define Categories that will define what assets are going to be loaded in it.  
+When you create new AdSpot you will see blue cube called “AdSpot Volume”. It shows the volume that defines maximum size of the downloaded branded asset. Also there are arrows with that shows direction  of the spot. For example if you place spot for TV you place it on the wall with forward direction looking from the wall.  
+You can adjust this Volume by dragging yellow handles or in the details panel.  
+To create AdSpot in Unreal Editor find in content browser AdSpot Actor located at: `Trivver C++ Classes/TrivverRuntime/Public/`
+Drop AdSpot Actor in to your scene.
+
+![AdSpot](../../images/unreal_adspot.png "AdSpot")
+
+By default AdSpot is empty and doesn't contain any asset in it. 
+You can add default asset (called [generic asset](xref:unity-generic-asset-term)) in case if there is no suitable [branded asset](xref:unity-branded-asset-term) on the server or there are any problems with network.
+When branded asset is loaded generic asset is replaced by it.  
+To do this, select staticMeshComponent in the details panel and assign your static mesh:
+
+![AdSpot](../../images/unreal_adspot_actor.png "AdSpotActor")
+
+Select AdSpot Actor to see all it's properties in the details panel AdSpot category:
+
+![AdSpot inspector](../../images/unreal_adspot_details.png "AdSpot inspector")
+
+
+| Property              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Guid                  | AdSpot unique identifier used by the Trivver system. It is generated when you create or duplicate AdSpot.                                                                                                                                                                                                                                                                                                                                                                               |
+| Categories            | AdSpot Categories define what [branded asset](xref:unity-branded-asset-term) will be loaded from the server. To assign/remove categories yoo have to press "Edit" button below Categories control. You may define as many categories as you like to describe more precisely what object you want to be loaded into the spot. For example: Vehicle, Car, Cabriolet, sport car                                                                                                                                                                                   |
+| Description           | Short description of the AdSpot.                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Scaling               | After loading [branded asset](xref:unity-branded-asset-term) there might be situation that it is bigger than AdSpot Volume. In this situation AdSpot will rescale branded asset according to this parameter. </br> <ul> <li> **Fit if bigger** - branded asset will be resized only if it is bigger than AdSpot Volume. The asset will be proportionally scaled down while it is fit into the Volume. If the asset is smaller than AdSpot Volume it will stay with original size. </li> <li> **Fit Always** - branded asset will always be re-scaled to fit the volume. So, if for example downloaded asset is smaller than volume it will be scaled up to fit the volume. </li> </ul>                              |
+| Asset loading scheme  | <ul> <li> **OnStart** - asset will be loaded to the AdSpot on it’s Start function automatically when the scene loaded.  </li> <li> **Manually** - after level loading AdSpot won’t request any [branded asset](xref:unity-branded-asset-term) until @Trivver.AdSpot.LoadBrandedAsset is called for this spot. </li> <ul>                                                                                                                                                                                                               |
+| Use only cached assets | Used when `OnStart` asset loading scheme is used. AdSpot will load asset only if that asset was cashed in #Asset pool so it can be loaded and displayed instantly.                                                                                                                                                                                                                                                                                                                        |
+| Display gizmo         | Shows/Hides AdSpot gizmo (blue box with arrows)                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Align position        | Align position matrix defines two things: first it defines where the pivot point of the AdSpot is placed. Second it defines how #branded asset is aligned within the AdSpot.For example if you set matrix to mid, mid, back - pivot point of AdSpot will be place in the center of bottom face of AdSpot Volume.                                                                                                                            |
+| Volume                | AdSpot Volume in numbers. This is absolute size value in world units. If you somehow scaled AdSpot, the size of the volume will be recalculated.                                            

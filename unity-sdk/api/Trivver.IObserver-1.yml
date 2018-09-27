@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.IObserver`1
+  commentId: T:Trivver.IObserver`1
+  id: IObserver`1
+  parent: Trivver
+  children:
+  - Trivver.IObserver`1.OnCompleted
+  - Trivver.IObserver`1.OnInterrupted
+  - Trivver.IObserver`1.OnProgress
+  langs:
+  - csharp
+  - vb
+  name: IObserver<T>
+  nameWithType: IObserver<T>
+  fullName: Trivver.IObserver<T>
+  type: Interface
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObserver.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: IObserver
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObserver.cs
+    startLine: 16
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nThis interface describes objects which can be subscribed on IObservable\nObserver design pattern: (https://msdn.microsoft.com/ru-ru/library/ee850490(v=vs.110).aspx)\n"
+  example: []
+  syntax:
+    content: public interface IObserver<T>
+    content.vb: Public Interface IObserver(Of T)
+    typeParameters:
+    - id: T
+      description: ''
+  nameWithType.vb: IObserver(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Trivver.IObserver(Of T)
+  name.vb: IObserver(Of T)
+- uid: Trivver.IObserver`1.OnCompleted
+  commentId: P:Trivver.IObserver`1.OnCompleted
+  id: OnCompleted
+  parent: Trivver.IObserver`1
+  langs:
+  - csharp
+  - vb
+  name: OnCompleted
+  nameWithType: IObserver<T>.OnCompleted
+  fullName: Trivver.IObserver<T>.OnCompleted
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObserver.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: OnCompleted
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObserver.cs
+    startLine: 21
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nOnComplete event handler. Called by IObservable successor\n"
+  example: []
+  syntax:
+    content: Action<T> OnCompleted { get; }
+    content.vb: ReadOnly Property OnCompleted As Action(Of T)
+    parameters: []
+    return:
+      type: System.Action{{T}}
+  overload: Trivver.IObserver`1.OnCompleted*
+  nameWithType.vb: IObserver(Of T).OnCompleted
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Trivver.IObserver(Of T).OnCompleted
+- uid: Trivver.IObserver`1.OnInterrupted
+  commentId: P:Trivver.IObserver`1.OnInterrupted
+  id: OnInterrupted
+  parent: Trivver.IObserver`1
+  langs:
+  - csharp
+  - vb
+  name: OnInterrupted
+  nameWithType: IObserver<T>.OnInterrupted
+  fullName: Trivver.IObserver<T>.OnInterrupted
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObserver.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: OnInterrupted
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObserver.cs
+    startLine: 26
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nOnInterrupted event handler. Called by IObservable successor\n"
+  example: []
+  syntax:
+    content: OnInterruptedHandler OnInterrupted { get; }
+    content.vb: ReadOnly Property OnInterrupted As OnInterruptedHandler
+    parameters: []
+    return:
+      type: Trivver.OnInterruptedHandler
+  overload: Trivver.IObserver`1.OnInterrupted*
+  nameWithType.vb: IObserver(Of T).OnInterrupted
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Trivver.IObserver(Of T).OnInterrupted
+- uid: Trivver.IObserver`1.OnProgress
+  commentId: P:Trivver.IObserver`1.OnProgress
+  id: OnProgress
+  parent: Trivver.IObserver`1
+  langs:
+  - csharp
+  - vb
+  name: OnProgress
+  nameWithType: IObserver<T>.OnProgress
+  fullName: Trivver.IObserver<T>.OnProgress
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObserver.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: OnProgress
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/Interfaces/IObserver.cs
+    startLine: 31
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nOnProgress event handler. Called by IObservable successor\n"
+  example: []
+  syntax:
+    content: Action<float> OnProgress { get; }
+    content.vb: ReadOnly Property OnProgress As Action(Of Single)
+    parameters: []
+    return:
+      type: System.Action{System.Single}
+  overload: Trivver.IObserver`1.OnProgress*
+  nameWithType.vb: IObserver(Of T).OnProgress
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Trivver.IObserver(Of T).OnProgress
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: Trivver.IObserver`1.OnCompleted*
+  commentId: Overload:Trivver.IObserver`1.OnCompleted
+  isExternal: false
+  name: OnCompleted
+  nameWithType: IObserver<T>.OnCompleted
+  fullName: Trivver.IObserver<T>.OnCompleted
+  nameWithType.vb: IObserver(Of T).OnCompleted
+  fullname.vb: Trivver.IObserver(Of T).OnCompleted
+- uid: System.Action{{T}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullname.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullname.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Trivver.IObserver`1.OnInterrupted*
+  commentId: Overload:Trivver.IObserver`1.OnInterrupted
+  isExternal: false
+  name: OnInterrupted
+  nameWithType: IObserver<T>.OnInterrupted
+  fullName: Trivver.IObserver<T>.OnInterrupted
+  nameWithType.vb: IObserver(Of T).OnInterrupted
+  fullname.vb: Trivver.IObserver(Of T).OnInterrupted
+- uid: Trivver.OnInterruptedHandler
+  commentId: T:Trivver.OnInterruptedHandler
+  parent: Trivver
+  isExternal: false
+  name: OnInterruptedHandler
+  nameWithType: OnInterruptedHandler
+  fullName: Trivver.OnInterruptedHandler
+- uid: Trivver.IObserver`1.OnProgress*
+  commentId: Overload:Trivver.IObserver`1.OnProgress
+  isExternal: false
+  name: OnProgress
+  nameWithType: IObserver<T>.OnProgress
+  fullName: Trivver.IObserver<T>.OnProgress
+  nameWithType.vb: IObserver(Of T).OnProgress
+  fullname.vb: Trivver.IObserver(Of T).OnProgress
+- uid: System.Action{System.Single}
+  commentId: T:System.Action{System.Single}
+  parent: System
+  definition: System.Action`1
+  name: Action<Single>
+  nameWithType: Action<Single>
+  fullName: System.Action<System.Single>
+  nameWithType.vb: Action(Of Single)
+  fullname.vb: System.Action(Of System.Single)
+  name.vb: Action(Of Single)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

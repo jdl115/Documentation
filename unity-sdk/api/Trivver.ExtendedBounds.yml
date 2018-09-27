@@ -1,0 +1,1020 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.ExtendedBounds
+  commentId: T:Trivver.ExtendedBounds
+  id: ExtendedBounds
+  parent: Trivver
+  children:
+  - Trivver.ExtendedBounds.#ctor(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,UnityEngine.Vector3)
+  - Trivver.ExtendedBounds.ApplyToTransform(UnityEngine.Transform)
+  - Trivver.ExtendedBounds.back
+  - Trivver.ExtendedBounds.Center
+  - Trivver.ExtendedBounds.down
+  - Trivver.ExtendedBounds.extents
+  - Trivver.ExtendedBounds.forward
+  - Trivver.ExtendedBounds.GetExtendedBounds(UnityEngine.Transform,UnityEngine.Transform)
+  - Trivver.ExtendedBounds.left
+  - Trivver.ExtendedBounds.max
+  - Trivver.ExtendedBounds.min
+  - Trivver.ExtendedBounds.PivotOffset
+  - Trivver.ExtendedBounds.right
+  - Trivver.ExtendedBounds.Rotation
+  - Trivver.ExtendedBounds.Size
+  - Trivver.ExtendedBounds.up
+  langs:
+  - csharp
+  - vb
+  name: ExtendedBounds
+  nameWithType: ExtendedBounds
+  fullName: Trivver.ExtendedBounds
+  type: Struct
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: ExtendedBounds
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 9
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nThis struct represents a volume i.e. bounding box that aso has rotation.\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct ExtendedBounds
+    content.vb: >-
+      <Serializable>
+
+      Public Structure ExtendedBounds
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Trivver.ExtendedBounds.Center
+  commentId: F:Trivver.ExtendedBounds.Center
+  id: Center
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: ExtendedBounds.Center
+  fullName: Trivver.ExtendedBounds.Center
+  type: Field
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Center
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 15
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nThe center of the bounds.\n"
+  example: []
+  syntax:
+    content: public Vector3 Center
+    content.vb: Public Center As Vector3
+    return:
+      type: UnityEngine.Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Trivver.ExtendedBounds.Rotation
+  commentId: F:Trivver.ExtendedBounds.Rotation
+  id: Rotation
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: Rotation
+  nameWithType: ExtendedBounds.Rotation
+  fullName: Trivver.ExtendedBounds.Rotation
+  type: Field
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Rotation
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 20
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nThe rotation of the bounds.\n"
+  example: []
+  syntax:
+    content: public Quaternion Rotation
+    content.vb: Public Rotation As Quaternion
+    return:
+      type: UnityEngine.Quaternion
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Trivver.ExtendedBounds.Size
+  commentId: F:Trivver.ExtendedBounds.Size
+  id: Size
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: ExtendedBounds.Size
+  fullName: Trivver.ExtendedBounds.Size
+  type: Field
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Size
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 25
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nThe size of the bounds.\n"
+  example: []
+  syntax:
+    content: public Vector3 Size
+    content.vb: Public Size As Vector3
+    return:
+      type: UnityEngine.Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Trivver.ExtendedBounds.PivotOffset
+  commentId: F:Trivver.ExtendedBounds.PivotOffset
+  id: PivotOffset
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: PivotOffset
+  nameWithType: ExtendedBounds.PivotOffset
+  fullName: Trivver.ExtendedBounds.PivotOffset
+  type: Field
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: PivotOffset
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 30
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nOffset of current bounds center from object's pivot point.\n"
+  example: []
+  syntax:
+    content: public Vector3 PivotOffset
+    content.vb: Public PivotOffset As Vector3
+    return:
+      type: UnityEngine.Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Trivver.ExtendedBounds.extents
+  commentId: P:Trivver.ExtendedBounds.extents
+  id: extents
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: extents
+  nameWithType: ExtendedBounds.extents
+  fullName: Trivver.ExtendedBounds.extents
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: extents
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 34
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public Vector3 extents { get; set; }
+    content.vb: Public Property extents As Vector3
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.extents*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.ExtendedBounds.left
+  commentId: P:Trivver.ExtendedBounds.left
+  id: left
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: left
+  nameWithType: ExtendedBounds.left
+  fullName: Trivver.ExtendedBounds.left
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: left
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 46
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public Vector3 left { get; }
+    content.vb: Public ReadOnly Property left As Vector3
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.left*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Trivver.ExtendedBounds.right
+  commentId: P:Trivver.ExtendedBounds.right
+  id: right
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: right
+  nameWithType: ExtendedBounds.right
+  fullName: Trivver.ExtendedBounds.right
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: right
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 54
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public Vector3 right { get; }
+    content.vb: Public ReadOnly Property right As Vector3
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.right*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Trivver.ExtendedBounds.up
+  commentId: P:Trivver.ExtendedBounds.up
+  id: up
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: up
+  nameWithType: ExtendedBounds.up
+  fullName: Trivver.ExtendedBounds.up
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: up
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 62
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public Vector3 up { get; }
+    content.vb: Public ReadOnly Property up As Vector3
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.up*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Trivver.ExtendedBounds.down
+  commentId: P:Trivver.ExtendedBounds.down
+  id: down
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: down
+  nameWithType: ExtendedBounds.down
+  fullName: Trivver.ExtendedBounds.down
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: down
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 70
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public Vector3 down { get; }
+    content.vb: Public ReadOnly Property down As Vector3
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.down*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Trivver.ExtendedBounds.back
+  commentId: P:Trivver.ExtendedBounds.back
+  id: back
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: back
+  nameWithType: ExtendedBounds.back
+  fullName: Trivver.ExtendedBounds.back
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: back
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 78
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public Vector3 back { get; }
+    content.vb: Public ReadOnly Property back As Vector3
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.back*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Trivver.ExtendedBounds.forward
+  commentId: P:Trivver.ExtendedBounds.forward
+  id: forward
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: forward
+  nameWithType: ExtendedBounds.forward
+  fullName: Trivver.ExtendedBounds.forward
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: forward
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 86
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public Vector3 forward { get; }
+    content.vb: Public ReadOnly Property forward As Vector3
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.forward*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Trivver.ExtendedBounds.max
+  commentId: P:Trivver.ExtendedBounds.max
+  id: max
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: max
+  nameWithType: ExtendedBounds.max
+  fullName: Trivver.ExtendedBounds.max
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: max
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 97
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nThe point in max corner of the bounds.\n"
+  example: []
+  syntax:
+    content: public Vector3 max { get; set; }
+    content.vb: Public Property max As Vector3
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.max*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.ExtendedBounds.min
+  commentId: P:Trivver.ExtendedBounds.min
+  id: min
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: min
+  nameWithType: ExtendedBounds.min
+  fullName: Trivver.ExtendedBounds.min
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: min
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 113
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nThe point in min corner of the bounds.\n"
+  example: []
+  syntax:
+    content: public Vector3 min { get; set; }
+    content.vb: Public Property min As Vector3
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.min*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.ExtendedBounds.#ctor(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,UnityEngine.Vector3)
+  commentId: M:Trivver.ExtendedBounds.#ctor(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,UnityEngine.Vector3)
+  id: '#ctor(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,UnityEngine.Vector3)'
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: ExtendedBounds(Vector3, Quaternion, Vector3, Vector3)
+  nameWithType: ExtendedBounds.ExtendedBounds(Vector3, Quaternion, Vector3, Vector3)
+  fullName: Trivver.ExtendedBounds.ExtendedBounds(UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Vector3, UnityEngine.Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: .ctor
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 126
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public ExtendedBounds(Vector3 center, Quaternion rotation, Vector3 size, Vector3 pivotOffset)
+    content.vb: Public Sub New(center As Vector3, rotation As Quaternion, size As Vector3, pivotOffset As Vector3)
+    parameters:
+    - id: center
+      type: UnityEngine.Vector3
+    - id: rotation
+      type: UnityEngine.Quaternion
+    - id: size
+      type: UnityEngine.Vector3
+    - id: pivotOffset
+      type: UnityEngine.Vector3
+  overload: Trivver.ExtendedBounds.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Trivver.ExtendedBounds.ApplyToTransform(UnityEngine.Transform)
+  commentId: M:Trivver.ExtendedBounds.ApplyToTransform(UnityEngine.Transform)
+  id: ApplyToTransform(UnityEngine.Transform)
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: ApplyToTransform(Transform)
+  nameWithType: ExtendedBounds.ApplyToTransform(Transform)
+  fullName: Trivver.ExtendedBounds.ApplyToTransform(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: ApplyToTransform
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 138
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nApplies Center/Rotation/Size as Position/Rotation/Scale to specified transform.\n"
+  example: []
+  syntax:
+    content: public void ApplyToTransform(Transform transform)
+    content.vb: Public Sub ApplyToTransform(transform As Transform)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+      description: ''
+  overload: Trivver.ExtendedBounds.ApplyToTransform*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Trivver.ExtendedBounds.GetExtendedBounds(UnityEngine.Transform,UnityEngine.Transform)
+  commentId: M:Trivver.ExtendedBounds.GetExtendedBounds(UnityEngine.Transform,UnityEngine.Transform)
+  id: GetExtendedBounds(UnityEngine.Transform,UnityEngine.Transform)
+  parent: Trivver.ExtendedBounds
+  langs:
+  - csharp
+  - vb
+  name: GetExtendedBounds(Transform, Transform)
+  nameWithType: ExtendedBounds.GetExtendedBounds(Transform, Transform)
+  fullName: Trivver.ExtendedBounds.GetExtendedBounds(UnityEngine.Transform, UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: GetExtendedBounds
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/ExtendedBounds.cs
+    startLine: 151
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nGets exteded bounds of specified object. \n"
+  example: []
+  syntax:
+    content: public static ExtendedBounds GetExtendedBounds(Transform obj, Transform relativeTo)
+    content.vb: Public Shared Function GetExtendedBounds(obj As Transform, relativeTo As Transform) As ExtendedBounds
+    parameters:
+    - id: obj
+      type: UnityEngine.Transform
+      description: ''
+    - id: relativeTo
+      type: UnityEngine.Transform
+      description: If set, bounds are calculated in specified object's space
+    return:
+      type: Trivver.ExtendedBounds
+      description: ''
+  overload: Trivver.ExtendedBounds.GetExtendedBounds*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: false
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: Trivver.ExtendedBounds.extents*
+  commentId: Overload:Trivver.ExtendedBounds.extents
+  isExternal: false
+  name: extents
+  nameWithType: ExtendedBounds.extents
+  fullName: Trivver.ExtendedBounds.extents
+- uid: Trivver.ExtendedBounds.left*
+  commentId: Overload:Trivver.ExtendedBounds.left
+  isExternal: false
+  name: left
+  nameWithType: ExtendedBounds.left
+  fullName: Trivver.ExtendedBounds.left
+- uid: Trivver.ExtendedBounds.right*
+  commentId: Overload:Trivver.ExtendedBounds.right
+  isExternal: false
+  name: right
+  nameWithType: ExtendedBounds.right
+  fullName: Trivver.ExtendedBounds.right
+- uid: Trivver.ExtendedBounds.up*
+  commentId: Overload:Trivver.ExtendedBounds.up
+  isExternal: false
+  name: up
+  nameWithType: ExtendedBounds.up
+  fullName: Trivver.ExtendedBounds.up
+- uid: Trivver.ExtendedBounds.down*
+  commentId: Overload:Trivver.ExtendedBounds.down
+  isExternal: false
+  name: down
+  nameWithType: ExtendedBounds.down
+  fullName: Trivver.ExtendedBounds.down
+- uid: Trivver.ExtendedBounds.back*
+  commentId: Overload:Trivver.ExtendedBounds.back
+  isExternal: false
+  name: back
+  nameWithType: ExtendedBounds.back
+  fullName: Trivver.ExtendedBounds.back
+- uid: Trivver.ExtendedBounds.forward*
+  commentId: Overload:Trivver.ExtendedBounds.forward
+  isExternal: false
+  name: forward
+  nameWithType: ExtendedBounds.forward
+  fullName: Trivver.ExtendedBounds.forward
+- uid: Trivver.ExtendedBounds.max*
+  commentId: Overload:Trivver.ExtendedBounds.max
+  isExternal: false
+  name: max
+  nameWithType: ExtendedBounds.max
+  fullName: Trivver.ExtendedBounds.max
+- uid: Trivver.ExtendedBounds.min*
+  commentId: Overload:Trivver.ExtendedBounds.min
+  isExternal: false
+  name: min
+  nameWithType: ExtendedBounds.min
+  fullName: Trivver.ExtendedBounds.min
+- uid: Trivver.ExtendedBounds.#ctor*
+  commentId: Overload:Trivver.ExtendedBounds.#ctor
+  isExternal: false
+  name: ExtendedBounds
+  nameWithType: ExtendedBounds.ExtendedBounds
+  fullName: Trivver.ExtendedBounds.ExtendedBounds
+- uid: Trivver.ExtendedBounds.ApplyToTransform*
+  commentId: Overload:Trivver.ExtendedBounds.ApplyToTransform
+  isExternal: false
+  name: ApplyToTransform
+  nameWithType: ExtendedBounds.ApplyToTransform
+  fullName: Trivver.ExtendedBounds.ApplyToTransform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: Trivver.ExtendedBounds.GetExtendedBounds*
+  commentId: Overload:Trivver.ExtendedBounds.GetExtendedBounds
+  isExternal: false
+  name: GetExtendedBounds
+  nameWithType: ExtendedBounds.GetExtendedBounds
+  fullName: Trivver.ExtendedBounds.GetExtendedBounds
+- uid: Trivver.ExtendedBounds
+  commentId: T:Trivver.ExtendedBounds
+  parent: Trivver
+  isExternal: false
+  name: ExtendedBounds
+  nameWithType: ExtendedBounds
+  fullName: Trivver.ExtendedBounds

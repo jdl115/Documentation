@@ -1,0 +1,1114 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.NestedObservableCollection`1
+  commentId: T:Trivver.NestedObservableCollection`1
+  id: NestedObservableCollection`1
+  parent: Trivver
+  children:
+  - Trivver.NestedObservableCollection`1.Get(System.Int32)
+  - Trivver.NestedObservableCollection`1.Insert(System.Int32,Trivver.ObservableCollection{`0})
+  - Trivver.NestedObservableCollection`1.RemoveAt(System.Int32)
+  - Trivver.NestedObservableCollection`1.Replace(System.Int32,Trivver.ObservableCollection{`0})
+  langs:
+  - csharp
+  - vb
+  name: NestedObservableCollection<T>
+  nameWithType: NestedObservableCollection<T>
+  fullName: Trivver.NestedObservableCollection<T>
+  type: Class
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: NestedObservableCollection
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+    startLine: 55
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nCollection class which can hold other collections as items\n"
+  example: []
+  syntax:
+    content: 'public class NestedObservableCollection<T> : ObservableCollection<ObservableCollection<T>>, IObsevableCollection'
+    content.vb: >-
+      Public Class NestedObservableCollection(Of T)
+          Inherits ObservableCollection(Of ObservableCollection(Of T))
+          Implements IObsevableCollection
+    typeParameters:
+    - id: T
+      description: ''
+  inheritance:
+  - System.Object
+  - Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}
+  implements:
+  - Trivver.IObsevableCollection
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: NestedObservableCollection(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Trivver.NestedObservableCollection(Of T)
+  name.vb: NestedObservableCollection(Of T)
+- uid: Trivver.NestedObservableCollection`1.Insert(System.Int32,Trivver.ObservableCollection{`0})
+  commentId: M:Trivver.NestedObservableCollection`1.Insert(System.Int32,Trivver.ObservableCollection{`0})
+  id: Insert(System.Int32,Trivver.ObservableCollection{`0})
+  parent: Trivver.NestedObservableCollection`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(Int32, ObservableCollection<T>)
+  nameWithType: NestedObservableCollection<T>.Insert(Int32, ObservableCollection<T>)
+  fullName: Trivver.NestedObservableCollection<T>.Insert(System.Int32, Trivver.ObservableCollection<T>)
+  type: Method
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Insert
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+    startLine: 59
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public override void Insert(int index, ObservableCollection<T> value)
+    content.vb: Public Overrides Sub Insert(index As Integer, value As ObservableCollection(Of T))
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: value
+      type: Trivver.ObservableCollection{{T}}
+  overridden: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}.Insert(System.Int32,Trivver.ObservableCollection{{T}})
+  overload: Trivver.NestedObservableCollection`1.Insert*
+  nameWithType.vb: NestedObservableCollection(Of T).Insert(Int32, ObservableCollection(Of T))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Trivver.NestedObservableCollection(Of T).Insert(System.Int32, Trivver.ObservableCollection(Of T))
+  name.vb: Insert(Int32, ObservableCollection(Of T))
+- uid: Trivver.NestedObservableCollection`1.RemoveAt(System.Int32)
+  commentId: M:Trivver.NestedObservableCollection`1.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: Trivver.NestedObservableCollection`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(Int32)
+  nameWithType: NestedObservableCollection<T>.RemoveAt(Int32)
+  fullName: Trivver.NestedObservableCollection<T>.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: RemoveAt
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+    startLine: 65
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public override void RemoveAt(int index)
+    content.vb: Public Overrides Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+  overridden: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}.RemoveAt(System.Int32)
+  overload: Trivver.NestedObservableCollection`1.RemoveAt*
+  nameWithType.vb: NestedObservableCollection(Of T).RemoveAt(Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Trivver.NestedObservableCollection(Of T).RemoveAt(System.Int32)
+- uid: Trivver.NestedObservableCollection`1.Replace(System.Int32,Trivver.ObservableCollection{`0})
+  commentId: M:Trivver.NestedObservableCollection`1.Replace(System.Int32,Trivver.ObservableCollection{`0})
+  id: Replace(System.Int32,Trivver.ObservableCollection{`0})
+  parent: Trivver.NestedObservableCollection`1
+  langs:
+  - csharp
+  - vb
+  name: Replace(Int32, ObservableCollection<T>)
+  nameWithType: NestedObservableCollection<T>.Replace(Int32, ObservableCollection<T>)
+  fullName: Trivver.NestedObservableCollection<T>.Replace(System.Int32, Trivver.ObservableCollection<T>)
+  type: Method
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Replace
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+    startLine: 71
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public override void Replace(int index, ObservableCollection<T> value)
+    content.vb: Public Overrides Sub Replace(index As Integer, value As ObservableCollection(Of T))
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: value
+      type: Trivver.ObservableCollection{{T}}
+  overridden: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}.Replace(System.Int32,Trivver.ObservableCollection{{T}})
+  overload: Trivver.NestedObservableCollection`1.Replace*
+  nameWithType.vb: NestedObservableCollection(Of T).Replace(Int32, ObservableCollection(Of T))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Trivver.NestedObservableCollection(Of T).Replace(System.Int32, Trivver.ObservableCollection(Of T))
+  name.vb: Replace(Int32, ObservableCollection(Of T))
+- uid: Trivver.NestedObservableCollection`1.Get(System.Int32)
+  commentId: M:Trivver.NestedObservableCollection`1.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Trivver.NestedObservableCollection`1
+  langs:
+  - csharp
+  - vb
+  name: Get(Int32)
+  nameWithType: NestedObservableCollection<T>.Get(Int32)
+  fullName: Trivver.NestedObservableCollection<T>.Get(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Get
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ObservableCollection.cs
+    startLine: 77
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public override ObservableCollection<T> Get(int index)
+    content.vb: Public Overrides Function Get(index As Integer) As ObservableCollection(Of T)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: Trivver.ObservableCollection{{T}}
+  overridden: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}.Get(System.Int32)
+  overload: Trivver.NestedObservableCollection`1.Get*
+  nameWithType.vb: NestedObservableCollection(Of T).Get(Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Trivver.NestedObservableCollection(Of T).Get(System.Int32)
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}
+  commentId: T:Trivver.ObservableCollection{Trivver.ObservableCollection{`0}}
+  parent: Trivver
+  definition: Trivver.ObservableCollection`1
+  name: ObservableCollection<ObservableCollection<T>>
+  nameWithType: ObservableCollection<ObservableCollection<T>>
+  fullName: Trivver.ObservableCollection<Trivver.ObservableCollection<T>>
+  nameWithType.vb: ObservableCollection(Of ObservableCollection(Of T))
+  fullname.vb: Trivver.ObservableCollection(Of Trivver.ObservableCollection(Of T))
+  name.vb: ObservableCollection(Of ObservableCollection(Of T))
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.IObsevableCollection
+  commentId: T:Trivver.IObsevableCollection
+  parent: Trivver
+  isExternal: false
+  name: IObsevableCollection
+  nameWithType: IObsevableCollection
+  fullName: Trivver.IObsevableCollection
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Trivver.ObservableCollection`1
+  commentId: T:Trivver.ObservableCollection`1
+  isExternal: false
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: Trivver.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullname.vb: Trivver.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}.Insert(System.Int32,Trivver.ObservableCollection{{T}})
+  commentId: M:Trivver.ObservableCollection{Trivver.ObservableCollection{`0}}.Insert(System.Int32,Trivver.ObservableCollection{`0})
+  parent: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}
+  definition: Trivver.ObservableCollection`1.Insert(System.Int32,`0)
+  name: Insert(Int32, ObservableCollection<T>)
+  nameWithType: ObservableCollection<ObservableCollection<T>>.Insert(Int32, ObservableCollection<T>)
+  fullName: Trivver.ObservableCollection<Trivver.ObservableCollection<T>>.Insert(System.Int32, Trivver.ObservableCollection<T>)
+  nameWithType.vb: ObservableCollection(Of ObservableCollection(Of T)).Insert(Int32, ObservableCollection(Of T))
+  fullname.vb: Trivver.ObservableCollection(Of Trivver.ObservableCollection(Of T)).Insert(System.Int32, Trivver.ObservableCollection(Of T))
+  name.vb: Insert(Int32, ObservableCollection(Of T))
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: ObservableCollection<ObservableCollection<T>>.Insert
+    fullName: Trivver.ObservableCollection<Trivver.ObservableCollection<T>>.Insert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: ObservableCollection(Of ObservableCollection(Of T)).Insert
+    fullName: Trivver.ObservableCollection(Of Trivver.ObservableCollection(Of T)).Insert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.NestedObservableCollection`1.Insert*
+  commentId: Overload:Trivver.NestedObservableCollection`1.Insert
+  isExternal: false
+  name: Insert
+  nameWithType: NestedObservableCollection<T>.Insert
+  fullName: Trivver.NestedObservableCollection<T>.Insert
+  nameWithType.vb: NestedObservableCollection(Of T).Insert
+  fullname.vb: Trivver.NestedObservableCollection(Of T).Insert
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Trivver.ObservableCollection{{T}}
+  commentId: T:Trivver.ObservableCollection{`0}
+  parent: Trivver
+  definition: Trivver.ObservableCollection`1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: Trivver.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullname.vb: Trivver.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.ObservableCollection`1.Insert(System.Int32,`0)
+  commentId: M:Trivver.ObservableCollection`1.Insert(System.Int32,`0)
+  isExternal: true
+  name: Insert(Int32, T)
+  nameWithType: ObservableCollection<T>.Insert(Int32, T)
+  fullName: Trivver.ObservableCollection<T>.Insert(System.Int32, T)
+  nameWithType.vb: ObservableCollection(Of T).Insert(Int32, T)
+  fullname.vb: Trivver.ObservableCollection(Of T).Insert(System.Int32, T)
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: ObservableCollection<T>.Insert
+    fullName: Trivver.ObservableCollection<T>.Insert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: ObservableCollection(Of T).Insert
+    fullName: Trivver.ObservableCollection(Of T).Insert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}.RemoveAt(System.Int32)
+  commentId: M:Trivver.ObservableCollection{Trivver.ObservableCollection{`0}}.RemoveAt(System.Int32)
+  parent: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}
+  definition: Trivver.ObservableCollection`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  nameWithType: ObservableCollection<ObservableCollection<T>>.RemoveAt(Int32)
+  fullName: Trivver.ObservableCollection<Trivver.ObservableCollection<T>>.RemoveAt(System.Int32)
+  nameWithType.vb: ObservableCollection(Of ObservableCollection(Of T)).RemoveAt(Int32)
+  fullname.vb: Trivver.ObservableCollection(Of Trivver.ObservableCollection(Of T)).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: ObservableCollection<ObservableCollection<T>>.RemoveAt
+    fullName: Trivver.ObservableCollection<Trivver.ObservableCollection<T>>.RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: ObservableCollection(Of ObservableCollection(Of T)).RemoveAt
+    fullName: Trivver.ObservableCollection(Of Trivver.ObservableCollection(Of T)).RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.NestedObservableCollection`1.RemoveAt*
+  commentId: Overload:Trivver.NestedObservableCollection`1.RemoveAt
+  isExternal: false
+  name: RemoveAt
+  nameWithType: NestedObservableCollection<T>.RemoveAt
+  fullName: Trivver.NestedObservableCollection<T>.RemoveAt
+  nameWithType.vb: NestedObservableCollection(Of T).RemoveAt
+  fullname.vb: Trivver.NestedObservableCollection(Of T).RemoveAt
+- uid: Trivver.ObservableCollection`1.RemoveAt(System.Int32)
+  commentId: M:Trivver.ObservableCollection`1.RemoveAt(System.Int32)
+  isExternal: true
+  name: RemoveAt(Int32)
+  nameWithType: ObservableCollection<T>.RemoveAt(Int32)
+  fullName: Trivver.ObservableCollection<T>.RemoveAt(System.Int32)
+  nameWithType.vb: ObservableCollection(Of T).RemoveAt(Int32)
+  fullname.vb: Trivver.ObservableCollection(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: ObservableCollection<T>.RemoveAt
+    fullName: Trivver.ObservableCollection<T>.RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: ObservableCollection(Of T).RemoveAt
+    fullName: Trivver.ObservableCollection(Of T).RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}.Replace(System.Int32,Trivver.ObservableCollection{{T}})
+  commentId: M:Trivver.ObservableCollection{Trivver.ObservableCollection{`0}}.Replace(System.Int32,Trivver.ObservableCollection{`0})
+  parent: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}
+  definition: Trivver.ObservableCollection`1.Replace(System.Int32,`0)
+  name: Replace(Int32, ObservableCollection<T>)
+  nameWithType: ObservableCollection<ObservableCollection<T>>.Replace(Int32, ObservableCollection<T>)
+  fullName: Trivver.ObservableCollection<Trivver.ObservableCollection<T>>.Replace(System.Int32, Trivver.ObservableCollection<T>)
+  nameWithType.vb: ObservableCollection(Of ObservableCollection(Of T)).Replace(Int32, ObservableCollection(Of T))
+  fullname.vb: Trivver.ObservableCollection(Of Trivver.ObservableCollection(Of T)).Replace(System.Int32, Trivver.ObservableCollection(Of T))
+  name.vb: Replace(Int32, ObservableCollection(Of T))
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1.Replace(System.Int32,`0)
+    name: Replace
+    nameWithType: ObservableCollection<ObservableCollection<T>>.Replace
+    fullName: Trivver.ObservableCollection<Trivver.ObservableCollection<T>>.Replace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1.Replace(System.Int32,`0)
+    name: Replace
+    nameWithType: ObservableCollection(Of ObservableCollection(Of T)).Replace
+    fullName: Trivver.ObservableCollection(Of Trivver.ObservableCollection(Of T)).Replace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: Trivver.ObservableCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.NestedObservableCollection`1.Replace*
+  commentId: Overload:Trivver.NestedObservableCollection`1.Replace
+  isExternal: false
+  name: Replace
+  nameWithType: NestedObservableCollection<T>.Replace
+  fullName: Trivver.NestedObservableCollection<T>.Replace
+  nameWithType.vb: NestedObservableCollection(Of T).Replace
+  fullname.vb: Trivver.NestedObservableCollection(Of T).Replace
+- uid: Trivver.ObservableCollection`1.Replace(System.Int32,`0)
+  commentId: M:Trivver.ObservableCollection`1.Replace(System.Int32,`0)
+  isExternal: true
+  name: Replace(Int32, T)
+  nameWithType: ObservableCollection<T>.Replace(Int32, T)
+  fullName: Trivver.ObservableCollection<T>.Replace(System.Int32, T)
+  nameWithType.vb: ObservableCollection(Of T).Replace(Int32, T)
+  fullname.vb: Trivver.ObservableCollection(Of T).Replace(System.Int32, T)
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1.Replace(System.Int32,`0)
+    name: Replace
+    nameWithType: ObservableCollection<T>.Replace
+    fullName: Trivver.ObservableCollection<T>.Replace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1.Replace(System.Int32,`0)
+    name: Replace
+    nameWithType: ObservableCollection(Of T).Replace
+    fullName: Trivver.ObservableCollection(Of T).Replace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}.Get(System.Int32)
+  commentId: M:Trivver.ObservableCollection{Trivver.ObservableCollection{`0}}.Get(System.Int32)
+  parent: Trivver.ObservableCollection{Trivver.ObservableCollection{{T}}}
+  definition: Trivver.ObservableCollection`1.Get(System.Int32)
+  name: Get(Int32)
+  nameWithType: ObservableCollection<ObservableCollection<T>>.Get(Int32)
+  fullName: Trivver.ObservableCollection<Trivver.ObservableCollection<T>>.Get(System.Int32)
+  nameWithType.vb: ObservableCollection(Of ObservableCollection(Of T)).Get(Int32)
+  fullname.vb: Trivver.ObservableCollection(Of Trivver.ObservableCollection(Of T)).Get(System.Int32)
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1.Get(System.Int32)
+    name: Get
+    nameWithType: ObservableCollection<ObservableCollection<T>>.Get
+    fullName: Trivver.ObservableCollection<Trivver.ObservableCollection<T>>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1.Get(System.Int32)
+    name: Get
+    nameWithType: ObservableCollection(Of ObservableCollection(Of T)).Get
+    fullName: Trivver.ObservableCollection(Of Trivver.ObservableCollection(Of T)).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.NestedObservableCollection`1.Get*
+  commentId: Overload:Trivver.NestedObservableCollection`1.Get
+  isExternal: false
+  name: Get
+  nameWithType: NestedObservableCollection<T>.Get
+  fullName: Trivver.NestedObservableCollection<T>.Get
+  nameWithType.vb: NestedObservableCollection(Of T).Get
+  fullname.vb: Trivver.NestedObservableCollection(Of T).Get
+- uid: Trivver.ObservableCollection`1.Get(System.Int32)
+  commentId: M:Trivver.ObservableCollection`1.Get(System.Int32)
+  isExternal: true
+  name: Get(Int32)
+  nameWithType: ObservableCollection<T>.Get(Int32)
+  fullName: Trivver.ObservableCollection<T>.Get(System.Int32)
+  nameWithType.vb: ObservableCollection(Of T).Get(Int32)
+  fullname.vb: Trivver.ObservableCollection(Of T).Get(System.Int32)
+  spec.csharp:
+  - uid: Trivver.ObservableCollection`1.Get(System.Int32)
+    name: Get
+    nameWithType: ObservableCollection<T>.Get
+    fullName: Trivver.ObservableCollection<T>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ObservableCollection`1.Get(System.Int32)
+    name: Get
+    nameWithType: ObservableCollection(Of T).Get
+    fullName: Trivver.ObservableCollection(Of T).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

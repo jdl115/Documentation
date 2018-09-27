@@ -1,0 +1,144 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.IBindablePropertyMetadata
+  commentId: T:Trivver.IBindablePropertyMetadata
+  id: IBindablePropertyMetadata
+  parent: Trivver
+  children:
+  - Trivver.IBindablePropertyMetadata.Name
+  - Trivver.IBindablePropertyMetadata.RegisterProperty(Trivver.ViewModelBase)
+  langs:
+  - csharp
+  - vb
+  name: IBindablePropertyMetadata
+  nameWithType: IBindablePropertyMetadata
+  fullName: Trivver.IBindablePropertyMetadata
+  type: Interface
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ViewModelBase.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: IBindablePropertyMetadata
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ViewModelBase.cs
+    startLine: 54
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nStores 'binding' configuration for concrete ViewModel's property.\n"
+  example: []
+  syntax:
+    content: public interface IBindablePropertyMetadata
+    content.vb: Public Interface IBindablePropertyMetadata
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Trivver.IBindablePropertyMetadata.Name
+  commentId: P:Trivver.IBindablePropertyMetadata.Name
+  id: Name
+  parent: Trivver.IBindablePropertyMetadata
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IBindablePropertyMetadata.Name
+  fullName: Trivver.IBindablePropertyMetadata.Name
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ViewModelBase.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Name
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ViewModelBase.cs
+    startLine: 59
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nProperty name\n"
+  example: []
+  syntax:
+    content: string Name { get; }
+    content.vb: ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+  overload: Trivver.IBindablePropertyMetadata.Name*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Trivver.IBindablePropertyMetadata.RegisterProperty(Trivver.ViewModelBase)
+  commentId: M:Trivver.IBindablePropertyMetadata.RegisterProperty(Trivver.ViewModelBase)
+  id: RegisterProperty(Trivver.ViewModelBase)
+  parent: Trivver.IBindablePropertyMetadata
+  langs:
+  - csharp
+  - vb
+  name: RegisterProperty(ViewModelBase)
+  nameWithType: IBindablePropertyMetadata.RegisterProperty(ViewModelBase)
+  fullName: Trivver.IBindablePropertyMetadata.RegisterProperty(Trivver.ViewModelBase)
+  type: Method
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ViewModelBase.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: RegisterProperty
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/ViewModelBase.cs
+    startLine: 65
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nRegister property in system - called to register property in DataContext - set default value.\n"
+  example: []
+  syntax:
+    content: void RegisterProperty(ViewModelBase context)
+    content.vb: Sub RegisterProperty(context As ViewModelBase)
+    parameters:
+    - id: context
+      type: Trivver.ViewModelBase
+      description: ''
+  overload: Trivver.IBindablePropertyMetadata.RegisterProperty*
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: Trivver.IBindablePropertyMetadata.Name*
+  commentId: Overload:Trivver.IBindablePropertyMetadata.Name
+  isExternal: false
+  name: Name
+  nameWithType: IBindablePropertyMetadata.Name
+  fullName: Trivver.IBindablePropertyMetadata.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Trivver.IBindablePropertyMetadata.RegisterProperty*
+  commentId: Overload:Trivver.IBindablePropertyMetadata.RegisterProperty
+  isExternal: false
+  name: RegisterProperty
+  nameWithType: IBindablePropertyMetadata.RegisterProperty
+  fullName: Trivver.IBindablePropertyMetadata.RegisterProperty
+- uid: Trivver.ViewModelBase
+  commentId: T:Trivver.ViewModelBase
+  parent: Trivver
+  isExternal: false
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: Trivver.ViewModelBase

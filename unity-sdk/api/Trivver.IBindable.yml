@@ -1,0 +1,143 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.IBindable
+  commentId: T:Trivver.IBindable
+  id: IBindable
+  parent: Trivver
+  children:
+  - Trivver.IBindable.Key
+  - Trivver.IBindable.SetDataContext(Trivver.DataContext)
+  langs:
+  - csharp
+  - vb
+  name: IBindable
+  nameWithType: IBindable
+  fullName: Trivver.IBindable
+  type: Interface
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/IBindable.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: IBindable
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/IBindable.cs
+    startLine: 5
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nBasic interface for Bindable components\n"
+  example: []
+  syntax:
+    content: public interface IBindable
+    content.vb: Public Interface IBindable
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Trivver.IBindable.Key
+  commentId: P:Trivver.IBindable.Key
+  id: Key
+  parent: Trivver.IBindable
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: IBindable.Key
+  fullName: Trivver.IBindable.Key
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/IBindable.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Key
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/IBindable.cs
+    startLine: 11
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nBindable key - name of field in ViewModel\n'set' is required for List elements\n"
+  example: []
+  syntax:
+    content: string Key { get; set; }
+    content.vb: Property Key As String
+    parameters: []
+    return:
+      type: System.String
+  overload: Trivver.IBindable.Key*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Trivver.IBindable.SetDataContext(Trivver.DataContext)
+  commentId: M:Trivver.IBindable.SetDataContext(Trivver.DataContext)
+  id: SetDataContext(Trivver.DataContext)
+  parent: Trivver.IBindable
+  langs:
+  - csharp
+  - vb
+  name: SetDataContext(DataContext)
+  nameWithType: IBindable.SetDataContext(DataContext)
+  fullName: Trivver.IBindable.SetDataContext(Trivver.DataContext)
+  type: Method
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/IBindable.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: SetDataContext
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/MVVM/IBindable.cs
+    startLine: 19
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nSet DataContext to Bindable in other words - Bind Bindable\n"
+  example: []
+  syntax:
+    content: void SetDataContext(DataContext context)
+    content.vb: Sub SetDataContext(context As DataContext)
+    parameters:
+    - id: context
+      type: Trivver.DataContext
+      description: ''
+  overload: Trivver.IBindable.SetDataContext*
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: Trivver.IBindable.Key*
+  commentId: Overload:Trivver.IBindable.Key
+  isExternal: false
+  name: Key
+  nameWithType: IBindable.Key
+  fullName: Trivver.IBindable.Key
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Trivver.IBindable.SetDataContext*
+  commentId: Overload:Trivver.IBindable.SetDataContext
+  isExternal: false
+  name: SetDataContext
+  nameWithType: IBindable.SetDataContext
+  fullName: Trivver.IBindable.SetDataContext
+- uid: Trivver.DataContext
+  commentId: T:Trivver.DataContext
+  parent: Trivver
+  isExternal: false
+  name: DataContext
+  nameWithType: DataContext
+  fullName: Trivver.DataContext

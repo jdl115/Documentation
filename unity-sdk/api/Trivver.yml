@@ -1,0 +1,250 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver
+  commentId: N:Trivver
+  id: Trivver
+  children:
+  - Trivver.AdSpot
+  - Trivver.Asset
+  - Trivver.AssetLoadingScheme
+  - Trivver.AssetScaling
+  - Trivver.CacheAssetsBase
+  - Trivver.CacheAssetsForGame
+  - Trivver.CacheAssetsForScene
+  - Trivver.ExtendedBounds
+  - Trivver.IAssetPool
+  - Trivver.IObservable`1
+  - Trivver.IObservableExtensions
+  - Trivver.IObserver`1
+  - Trivver.ITrivverGameSettings
+  - Trivver.LoggerExtensions
+  - Trivver.LogTag
+  - Trivver.OnInterruptedHandler
+  - Trivver.SmartTab
+  - Trivver.SmartTabAsset
+  - Trivver.SmartTabModelPreviewDrawMeshNow
+  - Trivver.SmartTabModelPreviewLayers
+  - Trivver.SmartTabModelPreviewRendererBase
+  - Trivver.TrivverSDK
+  langs:
+  - csharp
+  - vb
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+  type: Namespace
+  assemblies:
+  - Trivver.RuntimeSDK
+references:
+- uid: Trivver.AssetScaling
+  commentId: T:Trivver.AssetScaling
+  parent: Trivver
+  isExternal: false
+  name: AssetScaling
+  nameWithType: AssetScaling
+  fullName: Trivver.AssetScaling
+- uid: Trivver.AssetLoadingScheme
+  commentId: T:Trivver.AssetLoadingScheme
+  parent: Trivver
+  isExternal: false
+  name: AssetLoadingScheme
+  nameWithType: AssetLoadingScheme
+  fullName: Trivver.AssetLoadingScheme
+- uid: Trivver.AdSpot
+  commentId: T:Trivver.AdSpot
+  isExternal: false
+  name: AdSpot
+  nameWithType: AdSpot
+  fullName: Trivver.AdSpot
+- uid: Trivver.Asset
+  commentId: T:Trivver.Asset
+  parent: Trivver
+  isExternal: false
+  name: Asset
+  nameWithType: Asset
+  fullName: Trivver.Asset
+- uid: Trivver.ExtendedBounds
+  commentId: T:Trivver.ExtendedBounds
+  parent: Trivver
+  isExternal: false
+  name: ExtendedBounds
+  nameWithType: ExtendedBounds
+  fullName: Trivver.ExtendedBounds
+- uid: Trivver.IObservableExtensions
+  commentId: T:Trivver.IObservableExtensions
+  parent: Trivver
+  isExternal: false
+  name: IObservableExtensions
+  nameWithType: IObservableExtensions
+  fullName: Trivver.IObservableExtensions
+- uid: Trivver.IAssetPool
+  commentId: T:Trivver.IAssetPool
+  parent: Trivver
+  isExternal: false
+  name: IAssetPool
+  nameWithType: IAssetPool
+  fullName: Trivver.IAssetPool
+- uid: Trivver.IObservable`1
+  commentId: T:Trivver.IObservable`1
+  isExternal: false
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: Trivver.IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+  fullname.vb: Trivver.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  spec.csharp:
+  - uid: Trivver.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: Trivver.IObservable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Trivver.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: Trivver.IObservable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.OnInterruptedHandler
+  commentId: T:Trivver.OnInterruptedHandler
+  parent: Trivver
+  isExternal: false
+  name: OnInterruptedHandler
+  nameWithType: OnInterruptedHandler
+  fullName: Trivver.OnInterruptedHandler
+- uid: Trivver.IObserver`1
+  commentId: T:Trivver.IObserver`1
+  isExternal: false
+  name: IObserver<T>
+  nameWithType: IObserver<T>
+  fullName: Trivver.IObserver<T>
+  nameWithType.vb: IObserver(Of T)
+  fullname.vb: Trivver.IObserver(Of T)
+  name.vb: IObserver(Of T)
+  spec.csharp:
+  - uid: Trivver.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: Trivver.IObserver
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Trivver.IObserver`1
+    name: IObserver
+    nameWithType: IObserver
+    fullName: Trivver.IObserver
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.ITrivverGameSettings
+  commentId: T:Trivver.ITrivverGameSettings
+  parent: Trivver
+  isExternal: false
+  name: ITrivverGameSettings
+  nameWithType: ITrivverGameSettings
+  fullName: Trivver.ITrivverGameSettings
+- uid: Trivver.SmartTab
+  commentId: T:Trivver.SmartTab
+  parent: Trivver
+  isExternal: false
+  name: SmartTab
+  nameWithType: SmartTab
+  fullName: Trivver.SmartTab
+- uid: Trivver.SmartTabAsset
+  commentId: T:Trivver.SmartTabAsset
+  isExternal: false
+  name: SmartTabAsset
+  nameWithType: SmartTabAsset
+  fullName: Trivver.SmartTabAsset
+- uid: Trivver.SmartTabModelPreviewDrawMeshNow
+  commentId: T:Trivver.SmartTabModelPreviewDrawMeshNow
+  isExternal: false
+  name: SmartTabModelPreviewDrawMeshNow
+  nameWithType: SmartTabModelPreviewDrawMeshNow
+  fullName: Trivver.SmartTabModelPreviewDrawMeshNow
+- uid: Trivver.SmartTabModelPreviewLayers
+  commentId: T:Trivver.SmartTabModelPreviewLayers
+  isExternal: false
+  name: SmartTabModelPreviewLayers
+  nameWithType: SmartTabModelPreviewLayers
+  fullName: Trivver.SmartTabModelPreviewLayers
+- uid: Trivver.SmartTabModelPreviewRendererBase
+  commentId: T:Trivver.SmartTabModelPreviewRendererBase
+  parent: Trivver
+  isExternal: false
+  name: SmartTabModelPreviewRendererBase
+  nameWithType: SmartTabModelPreviewRendererBase
+  fullName: Trivver.SmartTabModelPreviewRendererBase
+- uid: Trivver.TrivverSDK
+  commentId: T:Trivver.TrivverSDK
+  isExternal: false
+  name: TrivverSDK
+  nameWithType: TrivverSDK
+  fullName: Trivver.TrivverSDK
+- uid: Trivver.LogTag
+  commentId: T:Trivver.LogTag
+  parent: Trivver
+  isExternal: false
+  name: LogTag
+  nameWithType: LogTag
+  fullName: Trivver.LogTag
+- uid: Trivver.LoggerExtensions
+  commentId: T:Trivver.LoggerExtensions
+  isExternal: false
+  name: LoggerExtensions
+  nameWithType: LoggerExtensions
+  fullName: Trivver.LoggerExtensions
+- uid: Trivver.CacheAssetsBase
+  commentId: T:Trivver.CacheAssetsBase
+  parent: Trivver
+  isExternal: false
+  name: CacheAssetsBase
+  nameWithType: CacheAssetsBase
+  fullName: Trivver.CacheAssetsBase
+- uid: Trivver.CacheAssetsForGame
+  commentId: T:Trivver.CacheAssetsForGame
+  isExternal: false
+  name: CacheAssetsForGame
+  nameWithType: CacheAssetsForGame
+  fullName: Trivver.CacheAssetsForGame
+- uid: Trivver.CacheAssetsForScene
+  commentId: T:Trivver.CacheAssetsForScene
+  isExternal: false
+  name: CacheAssetsForScene
+  nameWithType: CacheAssetsForScene
+  fullName: Trivver.CacheAssetsForScene
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver

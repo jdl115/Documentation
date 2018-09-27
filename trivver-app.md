@@ -1,2 +1,0 @@
-# Trivver app
-

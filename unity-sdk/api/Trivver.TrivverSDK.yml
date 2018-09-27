@@ -1,0 +1,687 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.TrivverSDK
+  commentId: T:Trivver.TrivverSDK
+  id: TrivverSDK
+  parent: Trivver
+  children:
+  - Trivver.TrivverSDK.AssetPool
+  - Trivver.TrivverSDK.LoggingSettingsEditMode
+  - Trivver.TrivverSDK.LoggingSettingsPlayMode
+  - Trivver.TrivverSDK.OnSmartTabClose
+  - Trivver.TrivverSDK.OnSmartTabOpen
+  - Trivver.TrivverSDK.SmartTab
+  - Trivver.TrivverSDK.TrivverGameSettings
+  langs:
+  - csharp
+  - vb
+  name: TrivverSDK
+  nameWithType: TrivverSDK
+  fullName: Trivver.TrivverSDK
+  type: Class
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: TrivverSDK
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+    startLine: 10
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public static class TrivverSDK
+    content.vb: Public Module TrivverSDK
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Trivver.TrivverSDK.AssetPool
+  commentId: P:Trivver.TrivverSDK.AssetPool
+  id: AssetPool
+  parent: Trivver.TrivverSDK
+  langs:
+  - csharp
+  - vb
+  name: AssetPool
+  nameWithType: TrivverSDK.AssetPool
+  fullName: Trivver.TrivverSDK.AssetPool
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: AssetPool
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+    startLine: 38
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nHolds cache of Assets. Allows to request branded object loading, and subscribe on it\n"
+  example: []
+  syntax:
+    content: public static IAssetPool AssetPool { get; }
+    content.vb: Public Shared ReadOnly Property AssetPool As IAssetPool
+    parameters: []
+    return:
+      type: Trivver.IAssetPool
+  overload: Trivver.TrivverSDK.AssetPool*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Trivver.TrivverSDK.TrivverGameSettings
+  commentId: P:Trivver.TrivverSDK.TrivverGameSettings
+  id: TrivverGameSettings
+  parent: Trivver.TrivverSDK
+  langs:
+  - csharp
+  - vb
+  name: TrivverGameSettings
+  nameWithType: TrivverSDK.TrivverGameSettings
+  fullName: Trivver.TrivverSDK.TrivverGameSettings
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: TrivverGameSettings
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+    startLine: 49
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nTrvver game settings interface\n"
+  example: []
+  syntax:
+    content: public static ITrivverGameSettings TrivverGameSettings { get; }
+    content.vb: Public Shared ReadOnly Property TrivverGameSettings As ITrivverGameSettings
+    parameters: []
+    return:
+      type: Trivver.ITrivverGameSettings
+  overload: Trivver.TrivverSDK.TrivverGameSettings*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Trivver.TrivverSDK.LoggingSettingsPlayMode
+  commentId: P:Trivver.TrivverSDK.LoggingSettingsPlayMode
+  id: LoggingSettingsPlayMode
+  parent: Trivver.TrivverSDK
+  langs:
+  - csharp
+  - vb
+  name: LoggingSettingsPlayMode
+  nameWithType: TrivverSDK.LoggingSettingsPlayMode
+  fullName: Trivver.TrivverSDK.LoggingSettingsPlayMode
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: LoggingSettingsPlayMode
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+    startLine: 60
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nLogging settings for play mode\n"
+  example: []
+  syntax:
+    content: public static ILoggingSettings LoggingSettingsPlayMode { get; }
+    content.vb: Public Shared ReadOnly Property LoggingSettingsPlayMode As ILoggingSettings
+    parameters: []
+    return:
+      type: Utils.Logging.ILoggingSettings
+  overload: Trivver.TrivverSDK.LoggingSettingsPlayMode*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Trivver.TrivverSDK.LoggingSettingsEditMode
+  commentId: P:Trivver.TrivverSDK.LoggingSettingsEditMode
+  id: LoggingSettingsEditMode
+  parent: Trivver.TrivverSDK
+  langs:
+  - csharp
+  - vb
+  name: LoggingSettingsEditMode
+  nameWithType: TrivverSDK.LoggingSettingsEditMode
+  fullName: Trivver.TrivverSDK.LoggingSettingsEditMode
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: LoggingSettingsEditMode
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+    startLine: 71
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nLogging settings in Editor\n"
+  example: []
+  syntax:
+    content: public static ILoggingSettings LoggingSettingsEditMode { get; }
+    content.vb: Public Shared ReadOnly Property LoggingSettingsEditMode As ILoggingSettings
+    parameters: []
+    return:
+      type: Utils.Logging.ILoggingSettings
+  overload: Trivver.TrivverSDK.LoggingSettingsEditMode*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Trivver.TrivverSDK.SmartTab
+  commentId: P:Trivver.TrivverSDK.SmartTab
+  id: SmartTab
+  parent: Trivver.TrivverSDK
+  langs:
+  - csharp
+  - vb
+  name: SmartTab
+  nameWithType: TrivverSDK.SmartTab
+  fullName: Trivver.TrivverSDK.SmartTab
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: SmartTab
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+    startLine: 82
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nTrivver SmartTab object. Can be null if smart tab is disabled\n"
+  example: []
+  syntax:
+    content: public static SmartTab SmartTab { get; }
+    content.vb: Public Shared ReadOnly Property SmartTab As SmartTab
+    parameters: []
+    return:
+      type: Trivver.SmartTab
+  overload: Trivver.TrivverSDK.SmartTab*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Trivver.TrivverSDK.OnSmartTabOpen
+  commentId: E:Trivver.TrivverSDK.OnSmartTabOpen
+  id: OnSmartTabOpen
+  parent: Trivver.TrivverSDK
+  langs:
+  - csharp
+  - vb
+  name: OnSmartTabOpen
+  nameWithType: TrivverSDK.OnSmartTabOpen
+  fullName: Trivver.TrivverSDK.OnSmartTabOpen
+  type: Event
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: OnSmartTabOpen
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+    startLine: 93
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nCalled after triggering SmartTab open (Right after pressing open button).\n"
+  example: []
+  syntax:
+    content: public static event Action OnSmartTabOpen
+    content.vb: Public Shared Event OnSmartTabOpen As Action
+    return:
+      type: System.Action
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Trivver.TrivverSDK.OnSmartTabClose
+  commentId: E:Trivver.TrivverSDK.OnSmartTabClose
+  id: OnSmartTabClose
+  parent: Trivver.TrivverSDK
+  langs:
+  - csharp
+  - vb
+  name: OnSmartTabClose
+  nameWithType: TrivverSDK.OnSmartTabClose
+  fullName: Trivver.TrivverSDK.OnSmartTabClose
+  type: Event
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+      branch: develop
+      repo: https://sergeykondratov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: OnSmartTabClose
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/TrivverSDK.cs
+    startLine: 108
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  summary: "\nCalled after triggering SmartTab close (Right after pressing close button).\n"
+  example: []
+  syntax:
+    content: public static event Action OnSmartTabClose
+    content.vb: Public Shared Event OnSmartTabClose As Action
+    return:
+      type: System.Action
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Trivver.TrivverSDK.AssetPool*
+  commentId: Overload:Trivver.TrivverSDK.AssetPool
+  isExternal: false
+  name: AssetPool
+  nameWithType: TrivverSDK.AssetPool
+  fullName: Trivver.TrivverSDK.AssetPool
+- uid: Trivver.IAssetPool
+  commentId: T:Trivver.IAssetPool
+  parent: Trivver
+  isExternal: false
+  name: IAssetPool
+  nameWithType: IAssetPool
+  fullName: Trivver.IAssetPool
+- uid: Trivver.TrivverSDK.TrivverGameSettings*
+  commentId: Overload:Trivver.TrivverSDK.TrivverGameSettings
+  isExternal: false
+  name: TrivverGameSettings
+  nameWithType: TrivverSDK.TrivverGameSettings
+  fullName: Trivver.TrivverSDK.TrivverGameSettings
+- uid: Trivver.ITrivverGameSettings
+  commentId: T:Trivver.ITrivverGameSettings
+  parent: Trivver
+  isExternal: false
+  name: ITrivverGameSettings
+  nameWithType: ITrivverGameSettings
+  fullName: Trivver.ITrivverGameSettings
+- uid: Trivver.TrivverSDK.LoggingSettingsPlayMode*
+  commentId: Overload:Trivver.TrivverSDK.LoggingSettingsPlayMode
+  isExternal: false
+  name: LoggingSettingsPlayMode
+  nameWithType: TrivverSDK.LoggingSettingsPlayMode
+  fullName: Trivver.TrivverSDK.LoggingSettingsPlayMode
+- uid: Utils.Logging.ILoggingSettings
+  commentId: T:Utils.Logging.ILoggingSettings
+  parent: Utils.Logging
+  isExternal: false
+  name: ILoggingSettings
+  nameWithType: ILoggingSettings
+  fullName: Utils.Logging.ILoggingSettings
+- uid: Utils.Logging
+  commentId: N:Utils.Logging
+  isExternal: false
+  name: Utils.Logging
+  nameWithType: Utils.Logging
+  fullName: Utils.Logging
+- uid: Trivver.TrivverSDK.LoggingSettingsEditMode*
+  commentId: Overload:Trivver.TrivverSDK.LoggingSettingsEditMode
+  isExternal: false
+  name: LoggingSettingsEditMode
+  nameWithType: TrivverSDK.LoggingSettingsEditMode
+  fullName: Trivver.TrivverSDK.LoggingSettingsEditMode
+- uid: Trivver.TrivverSDK.SmartTab*
+  commentId: Overload:Trivver.TrivverSDK.SmartTab
+  isExternal: false
+  name: SmartTab
+  nameWithType: TrivverSDK.SmartTab
+  fullName: Trivver.TrivverSDK.SmartTab
+- uid: Trivver.SmartTab
+  commentId: T:Trivver.SmartTab
+  parent: Trivver
+  isExternal: false
+  name: SmartTab
+  nameWithType: SmartTab
+  fullName: Trivver.SmartTab
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

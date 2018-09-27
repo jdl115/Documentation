@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.CacheAssetsForScene
+  commentId: T:Trivver.CacheAssetsForScene
+  id: CacheAssetsForScene
+  parent: Trivver
+  children:
+  - Trivver.CacheAssetsForScene.StartPreloading
+  - Trivver.CacheAssetsForScene.StartPreloading
+  langs:
+  - csharp
+  - vb
+  name: CacheAssetsForScene
+  nameWithType: CacheAssetsForScene
+  fullName: Trivver.CacheAssetsForScene
+  type: Class
+  source:
+    id: CacheAssetsForScene
+    path: ''
+    startLine: 363
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  summary: "\nComponent which allows to pre-load assets for AdSpots placed on certain scene.\n\nIt is often reasonable to move branded assets loading at loading screen, or game start, in order to\nto avoid excess CPU time consumption at gameplay.\nThis component allows you to configure when and how branded assets are loaded to game.\n\nBuild your own preloader based on: Trivver.Helpers:\n"
+  example: []
+  syntax:
+    content: 'public class CacheAssetsForScene : CacheAssetsBase, MonoBehaviour'
+    content.vb: >-
+      Public Class CacheAssetsForScene
+          Inherits CacheAssetsBase
+          Implements MonoBehaviour
+  inheritance:
+  - System.Object
+  - Trivver.CacheAssetsBase
+  inheritedMembers:
+  - Trivver.CacheAssetsBase.startAutomatically
+  - Trivver.CacheAssetsBase.timeoutSeconds
+  - Trivver.CacheAssetsBase.onFinish
+  - Trivver.CacheAssetsBase.onProgress
+  - Trivver.CacheAssetsBase.currentProgress
+  - Trivver.CacheAssetsBase.CurrentProgress
+  - Trivver.CacheAssetsBase.OnProgress(System.Single)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Trivver.CacheAssetsForScene.StartPreloading
+  commentId: M:Trivver.CacheAssetsForScene.StartPreloading
+  id: StartPreloading
+  parent: Trivver.CacheAssetsForScene
+  langs:
+  - csharp
+  - vb
+  name: StartPreloading()
+  nameWithType: CacheAssetsForScene.StartPreloading()
+  fullName: Trivver.CacheAssetsForScene.StartPreloading()
+  type: Method
+  source:
+    id: StartPreloading
+    path: ''
+    startLine: 163
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: public override void StartPreloading()
+    content.vb: Public Overrides Sub StartPreloading
+  overridden: Trivver.CacheAssetsBase.StartPreloading
+  overload: Trivver.CacheAssetsForScene.StartPreloading*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Trivver.CacheAssetsForScene.StartPreloading
+  commentId: M:Trivver.CacheAssetsForScene.StartPreloading
+  id: StartPreloading
+  parent: Trivver.CacheAssetsForScene
+  langs:
+  - csharp
+  - vb
+  name: StartPreloading()
+  nameWithType: CacheAssetsForScene.StartPreloading()
+  fullName: Trivver.CacheAssetsForScene.StartPreloading()
+  type: Method
+  source:
+    id: StartPreloading
+    path: ''
+    startLine: 378
+  assemblies:
+  - cs.temp.dll
+  namespace: Trivver
+  syntax:
+    content: public override void StartPreloading()
+    content.vb: Public Overrides Sub StartPreloading
+  overridden: Trivver.CacheAssetsBase.StartPreloading
+  overload: Trivver.CacheAssetsForScene.StartPreloading*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Trivver.CacheAssetsBase
+  commentId: T:Trivver.CacheAssetsBase
+  parent: Trivver
+  isExternal: false
+  name: CacheAssetsBase
+  nameWithType: CacheAssetsBase
+  fullName: Trivver.CacheAssetsBase
+- uid: Trivver.CacheAssetsBase.startAutomatically
+  commentId: F:Trivver.CacheAssetsBase.startAutomatically
+  parent: Trivver.CacheAssetsBase
+  isExternal: false
+  name: startAutomatically
+  nameWithType: CacheAssetsBase.startAutomatically
+  fullName: Trivver.CacheAssetsBase.startAutomatically
+- uid: Trivver.CacheAssetsBase.timeoutSeconds
+  commentId: F:Trivver.CacheAssetsBase.timeoutSeconds
+  parent: Trivver.CacheAssetsBase
+  isExternal: false
+  name: timeoutSeconds
+  nameWithType: CacheAssetsBase.timeoutSeconds
+  fullName: Trivver.CacheAssetsBase.timeoutSeconds
+- uid: Trivver.CacheAssetsBase.onFinish
+  commentId: F:Trivver.CacheAssetsBase.onFinish
+  parent: Trivver.CacheAssetsBase
+  isExternal: false
+  name: onFinish
+  nameWithType: CacheAssetsBase.onFinish
+  fullName: Trivver.CacheAssetsBase.onFinish
+- uid: Trivver.CacheAssetsBase.onProgress
+  commentId: F:Trivver.CacheAssetsBase.onProgress
+  parent: Trivver.CacheAssetsBase
+  isExternal: false
+  name: onProgress
+  nameWithType: CacheAssetsBase.onProgress
+  fullName: Trivver.CacheAssetsBase.onProgress
+- uid: Trivver.CacheAssetsBase.currentProgress
+  commentId: F:Trivver.CacheAssetsBase.currentProgress
+  parent: Trivver.CacheAssetsBase
+  isExternal: false
+  name: currentProgress
+  nameWithType: CacheAssetsBase.currentProgress
+  fullName: Trivver.CacheAssetsBase.currentProgress
+- uid: Trivver.CacheAssetsBase.CurrentProgress
+  commentId: P:Trivver.CacheAssetsBase.CurrentProgress
+  parent: Trivver.CacheAssetsBase
+  isExternal: false
+  name: CurrentProgress
+  nameWithType: CacheAssetsBase.CurrentProgress
+  fullName: Trivver.CacheAssetsBase.CurrentProgress
+- uid: Trivver.CacheAssetsBase.OnProgress(System.Single)
+  commentId: M:Trivver.CacheAssetsBase.OnProgress(System.Single)
+  parent: Trivver.CacheAssetsBase
+  isExternal: true
+  name: OnProgress(Single)
+  nameWithType: CacheAssetsBase.OnProgress(Single)
+  fullName: Trivver.CacheAssetsBase.OnProgress(System.Single)
+  spec.csharp:
+  - uid: Trivver.CacheAssetsBase.OnProgress(System.Single)
+    name: OnProgress
+    nameWithType: CacheAssetsBase.OnProgress
+    fullName: Trivver.CacheAssetsBase.OnProgress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.CacheAssetsBase.OnProgress(System.Single)
+    name: OnProgress
+    nameWithType: CacheAssetsBase.OnProgress
+    fullName: Trivver.CacheAssetsBase.OnProgress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Trivver.CacheAssetsBase.StartPreloading
+  commentId: M:Trivver.CacheAssetsBase.StartPreloading
+  parent: Trivver.CacheAssetsBase
+  isExternal: false
+  name: StartPreloading()
+  nameWithType: CacheAssetsBase.StartPreloading()
+  fullName: Trivver.CacheAssetsBase.StartPreloading()
+  spec.csharp:
+  - uid: Trivver.CacheAssetsBase.StartPreloading
+    name: StartPreloading
+    nameWithType: CacheAssetsBase.StartPreloading
+    fullName: Trivver.CacheAssetsBase.StartPreloading
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.CacheAssetsBase.StartPreloading
+    name: StartPreloading
+    nameWithType: CacheAssetsBase.StartPreloading
+    fullName: Trivver.CacheAssetsBase.StartPreloading
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.CacheAssetsForScene.StartPreloading*
+  commentId: Overload:Trivver.CacheAssetsForScene.StartPreloading
+  isExternal: false
+  name: StartPreloading
+  nameWithType: CacheAssetsForScene.StartPreloading
+  fullName: Trivver.CacheAssetsForScene.StartPreloading

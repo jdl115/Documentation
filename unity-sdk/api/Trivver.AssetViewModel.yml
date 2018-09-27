@@ -1,0 +1,966 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trivver.AssetViewModel
+  commentId: T:Trivver.AssetViewModel
+  id: AssetViewModel
+  parent: Trivver
+  children:
+  - Trivver.AssetViewModel.#ctor
+  - Trivver.AssetViewModel.#ctor(Trivver.Asset)
+  - Trivver.AssetViewModel.Asset3dPreviewObject
+  - Trivver.AssetViewModel.AssetInfo
+  - Trivver.AssetViewModel.Description
+  - Trivver.AssetViewModel.Icon
+  - Trivver.AssetViewModel.MainImage
+  - Trivver.AssetViewModel.Title
+  - Trivver.AssetViewModel.VideoUrl
+  - Trivver.AssetViewModel.ViewMode
+  - Trivver.AssetViewModel.WhereToBuy
+  langs:
+  - csharp
+  - vb
+  name: AssetViewModel
+  nameWithType: AssetViewModel
+  fullName: Trivver.AssetViewModel
+  type: Class
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: AssetViewModel
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 9
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: 'public class AssetViewModel : ViewModelBase'
+    content.vb: >-
+      Public Class AssetViewModel
+          Inherits ViewModelBase
+  inheritance:
+  - System.Object
+  - Trivver.ViewModelBase
+  inheritedMembers:
+  - Trivver.ViewModelBase.propertiesRegistry
+  - Trivver.ViewModelBase.RegisterProperty(System.Type,Trivver.IBindablePropertyMetadata)
+  - Trivver.ViewModelBase.GetViewModelParameters(System.Type)
+  - Trivver.ViewModelBase.DataContext
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Trivver.AssetViewModel.#ctor(Trivver.Asset)
+  commentId: M:Trivver.AssetViewModel.#ctor(Trivver.Asset)
+  id: '#ctor(Trivver.Asset)'
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: AssetViewModel(Asset)
+  nameWithType: AssetViewModel.AssetViewModel(Asset)
+  fullName: Trivver.AssetViewModel.AssetViewModel(Trivver.Asset)
+  type: Constructor
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: .ctor
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 11
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public AssetViewModel(Asset asset)
+    content.vb: Public Sub New(asset As Asset)
+    parameters:
+    - id: asset
+      type: Trivver.Asset
+  overload: Trivver.AssetViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Trivver.AssetViewModel.#ctor
+  commentId: M:Trivver.AssetViewModel.#ctor
+  id: '#ctor'
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: AssetViewModel()
+  nameWithType: AssetViewModel.AssetViewModel()
+  fullName: Trivver.AssetViewModel.AssetViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: .ctor
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 23
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public AssetViewModel()
+    content.vb: Public Sub New
+  overload: Trivver.AssetViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Trivver.AssetViewModel.AssetInfo
+  commentId: P:Trivver.AssetViewModel.AssetInfo
+  id: AssetInfo
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: AssetInfo
+  nameWithType: AssetViewModel.AssetInfo
+  fullName: Trivver.AssetViewModel.AssetInfo
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: AssetInfo
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 28
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public AssetInfo AssetInfo { get; }
+    content.vb: Public ReadOnly Property AssetInfo As AssetInfo
+    parameters: []
+    return:
+      type: Trivver.API.Model.AssetInfo
+  overload: Trivver.AssetViewModel.AssetInfo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Trivver.AssetViewModel.ViewMode
+  commentId: P:Trivver.AssetViewModel.ViewMode
+  id: ViewMode
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: ViewMode
+  nameWithType: AssetViewModel.ViewMode
+  fullName: Trivver.AssetViewModel.ViewMode
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: ViewMode
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 32
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public int ViewMode { get; set; }
+    content.vb: Public Property ViewMode As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  overload: Trivver.AssetViewModel.ViewMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.AssetViewModel.Icon
+  commentId: P:Trivver.AssetViewModel.Icon
+  id: Icon
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: Icon
+  nameWithType: AssetViewModel.Icon
+  fullName: Trivver.AssetViewModel.Icon
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Icon
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 46
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public Sprite Icon { get; set; }
+    content.vb: Public Property Icon As Sprite
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+  overload: Trivver.AssetViewModel.Icon*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.AssetViewModel.Description
+  commentId: P:Trivver.AssetViewModel.Description
+  id: Description
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: AssetViewModel.Description
+  fullName: Trivver.AssetViewModel.Description
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Description
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 60
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public string Description { get; set; }
+    content.vb: Public Property Description As String
+    parameters: []
+    return:
+      type: System.String
+  overload: Trivver.AssetViewModel.Description*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.AssetViewModel.Title
+  commentId: P:Trivver.AssetViewModel.Title
+  id: Title
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: AssetViewModel.Title
+  fullName: Trivver.AssetViewModel.Title
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Title
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 74
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public string Title { get; set; }
+    content.vb: Public Property Title As String
+    parameters: []
+    return:
+      type: System.String
+  overload: Trivver.AssetViewModel.Title*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.AssetViewModel.MainImage
+  commentId: P:Trivver.AssetViewModel.MainImage
+  id: MainImage
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: MainImage
+  nameWithType: AssetViewModel.MainImage
+  fullName: Trivver.AssetViewModel.MainImage
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: MainImage
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 88
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public Sprite MainImage { get; set; }
+    content.vb: Public Property MainImage As Sprite
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+  overload: Trivver.AssetViewModel.MainImage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.AssetViewModel.VideoUrl
+  commentId: P:Trivver.AssetViewModel.VideoUrl
+  id: VideoUrl
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: VideoUrl
+  nameWithType: AssetViewModel.VideoUrl
+  fullName: Trivver.AssetViewModel.VideoUrl
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: VideoUrl
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 102
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public string VideoUrl { get; set; }
+    content.vb: Public Property VideoUrl As String
+    parameters: []
+    return:
+      type: System.String
+  overload: Trivver.AssetViewModel.VideoUrl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.AssetViewModel.WhereToBuy
+  commentId: P:Trivver.AssetViewModel.WhereToBuy
+  id: WhereToBuy
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: WhereToBuy
+  nameWithType: AssetViewModel.WhereToBuy
+  fullName: Trivver.AssetViewModel.WhereToBuy
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: WhereToBuy
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 116
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public string WhereToBuy { get; set; }
+    content.vb: Public Property WhereToBuy As String
+    parameters: []
+    return:
+      type: System.String
+  overload: Trivver.AssetViewModel.WhereToBuy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Trivver.AssetViewModel.Asset3dPreviewObject
+  commentId: P:Trivver.AssetViewModel.Asset3dPreviewObject
+  id: Asset3dPreviewObject
+  parent: Trivver.AssetViewModel
+  langs:
+  - csharp
+  - vb
+  name: Asset3dPreviewObject
+  nameWithType: AssetViewModel.Asset3dPreviewObject
+  fullName: Trivver.AssetViewModel.Asset3dPreviewObject
+  type: Property
+  source:
+    remote:
+      path: src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+      branch: feature/triv-2221-ad-report
+      repo: https://alexanderarbuznikov@gitblit.saritasa.com/r/trivver/unity-sdk.git
+    id: Asset3dPreviewObject
+    path: ../../trivver-unity-sdk/src/trivver-unity-sdk/Assets/Plugins/Trivver.RuntimeSDK/SmartTab/SmartTabViewModel.cs
+    startLine: 130
+  assemblies:
+  - Trivver.RuntimeSDK
+  namespace: Trivver
+  syntax:
+    content: public GameObject Asset3dPreviewObject { get; set; }
+    content.vb: Public Property Asset3dPreviewObject As GameObject
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+  overload: Trivver.AssetViewModel.Asset3dPreviewObject*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Trivver
+  commentId: N:Trivver
+  isExternal: false
+  name: Trivver
+  nameWithType: Trivver
+  fullName: Trivver
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Trivver.ViewModelBase
+  commentId: T:Trivver.ViewModelBase
+  parent: Trivver
+  isExternal: false
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: Trivver.ViewModelBase
+- uid: Trivver.ViewModelBase.propertiesRegistry
+  commentId: F:Trivver.ViewModelBase.propertiesRegistry
+  parent: Trivver.ViewModelBase
+  isExternal: false
+  name: propertiesRegistry
+  nameWithType: ViewModelBase.propertiesRegistry
+  fullName: Trivver.ViewModelBase.propertiesRegistry
+- uid: Trivver.ViewModelBase.RegisterProperty(System.Type,Trivver.IBindablePropertyMetadata)
+  commentId: M:Trivver.ViewModelBase.RegisterProperty(System.Type,Trivver.IBindablePropertyMetadata)
+  parent: Trivver.ViewModelBase
+  isExternal: true
+  name: RegisterProperty(Type, IBindablePropertyMetadata)
+  nameWithType: ViewModelBase.RegisterProperty(Type, IBindablePropertyMetadata)
+  fullName: Trivver.ViewModelBase.RegisterProperty(System.Type, Trivver.IBindablePropertyMetadata)
+  spec.csharp:
+  - uid: Trivver.ViewModelBase.RegisterProperty(System.Type,Trivver.IBindablePropertyMetadata)
+    name: RegisterProperty
+    nameWithType: ViewModelBase.RegisterProperty
+    fullName: Trivver.ViewModelBase.RegisterProperty
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.IBindablePropertyMetadata
+    name: IBindablePropertyMetadata
+    nameWithType: IBindablePropertyMetadata
+    fullName: Trivver.IBindablePropertyMetadata
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ViewModelBase.RegisterProperty(System.Type,Trivver.IBindablePropertyMetadata)
+    name: RegisterProperty
+    nameWithType: ViewModelBase.RegisterProperty
+    fullName: Trivver.ViewModelBase.RegisterProperty
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Trivver.IBindablePropertyMetadata
+    name: IBindablePropertyMetadata
+    nameWithType: IBindablePropertyMetadata
+    fullName: Trivver.IBindablePropertyMetadata
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.ViewModelBase.GetViewModelParameters(System.Type)
+  commentId: M:Trivver.ViewModelBase.GetViewModelParameters(System.Type)
+  parent: Trivver.ViewModelBase
+  isExternal: true
+  name: GetViewModelParameters(Type)
+  nameWithType: ViewModelBase.GetViewModelParameters(Type)
+  fullName: Trivver.ViewModelBase.GetViewModelParameters(System.Type)
+  spec.csharp:
+  - uid: Trivver.ViewModelBase.GetViewModelParameters(System.Type)
+    name: GetViewModelParameters
+    nameWithType: ViewModelBase.GetViewModelParameters
+    fullName: Trivver.ViewModelBase.GetViewModelParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Trivver.ViewModelBase.GetViewModelParameters(System.Type)
+    name: GetViewModelParameters
+    nameWithType: ViewModelBase.GetViewModelParameters
+    fullName: Trivver.ViewModelBase.GetViewModelParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Trivver.ViewModelBase.DataContext
+  commentId: P:Trivver.ViewModelBase.DataContext
+  parent: Trivver.ViewModelBase
+  isExternal: false
+  name: DataContext
+  nameWithType: ViewModelBase.DataContext
+  fullName: Trivver.ViewModelBase.DataContext
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Trivver.AssetViewModel.#ctor*
+  commentId: Overload:Trivver.AssetViewModel.#ctor
+  isExternal: false
+  name: AssetViewModel
+  nameWithType: AssetViewModel.AssetViewModel
+  fullName: Trivver.AssetViewModel.AssetViewModel
+- uid: Trivver.Asset
+  commentId: T:Trivver.Asset
+  parent: Trivver
+  isExternal: false
+  name: Asset
+  nameWithType: Asset
+  fullName: Trivver.Asset
+- uid: Trivver.AssetViewModel.AssetInfo*
+  commentId: Overload:Trivver.AssetViewModel.AssetInfo
+  isExternal: false
+  name: AssetInfo
+  nameWithType: AssetViewModel.AssetInfo
+  fullName: Trivver.AssetViewModel.AssetInfo
+- uid: Trivver.API.Model.AssetInfo
+  commentId: T:Trivver.API.Model.AssetInfo
+  parent: Trivver.API.Model
+  isExternal: false
+  name: AssetInfo
+  nameWithType: AssetInfo
+  fullName: Trivver.API.Model.AssetInfo
+- uid: Trivver.API.Model
+  commentId: N:Trivver.API.Model
+  isExternal: false
+  name: Trivver.API.Model
+  nameWithType: Trivver.API.Model
+  fullName: Trivver.API.Model
+- uid: Trivver.AssetViewModel.ViewMode*
+  commentId: Overload:Trivver.AssetViewModel.ViewMode
+  isExternal: false
+  name: ViewMode
+  nameWithType: AssetViewModel.ViewMode
+  fullName: Trivver.AssetViewModel.ViewMode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Trivver.AssetViewModel.Icon*
+  commentId: Overload:Trivver.AssetViewModel.Icon
+  isExternal: false
+  name: Icon
+  nameWithType: AssetViewModel.Icon
+  fullName: Trivver.AssetViewModel.Icon
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: false
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Trivver.AssetViewModel.Description*
+  commentId: Overload:Trivver.AssetViewModel.Description
+  isExternal: false
+  name: Description
+  nameWithType: AssetViewModel.Description
+  fullName: Trivver.AssetViewModel.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Trivver.AssetViewModel.Title*
+  commentId: Overload:Trivver.AssetViewModel.Title
+  isExternal: false
+  name: Title
+  nameWithType: AssetViewModel.Title
+  fullName: Trivver.AssetViewModel.Title
+- uid: Trivver.AssetViewModel.MainImage*
+  commentId: Overload:Trivver.AssetViewModel.MainImage
+  isExternal: false
+  name: MainImage
+  nameWithType: AssetViewModel.MainImage
+  fullName: Trivver.AssetViewModel.MainImage
+- uid: Trivver.AssetViewModel.VideoUrl*
+  commentId: Overload:Trivver.AssetViewModel.VideoUrl
+  isExternal: false
+  name: VideoUrl
+  nameWithType: AssetViewModel.VideoUrl
+  fullName: Trivver.AssetViewModel.VideoUrl
+- uid: Trivver.AssetViewModel.WhereToBuy*
+  commentId: Overload:Trivver.AssetViewModel.WhereToBuy
+  isExternal: false
+  name: WhereToBuy
+  nameWithType: AssetViewModel.WhereToBuy
+  fullName: Trivver.AssetViewModel.WhereToBuy
+- uid: Trivver.AssetViewModel.Asset3dPreviewObject*
+  commentId: Overload:Trivver.AssetViewModel.Asset3dPreviewObject
+  isExternal: false
+  name: Asset3dPreviewObject
+  nameWithType: AssetViewModel.Asset3dPreviewObject
+  fullName: Trivver.AssetViewModel.Asset3dPreviewObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject

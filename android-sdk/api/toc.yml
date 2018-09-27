@@ -1,0 +1,8 @@
+### YamlMime:TableOfContent
+- uid: SmartTab
+  name: SmartTab
+  href: android-smarttab.md
+  items:
+  - uid: Builder
+    name: Builder
+    href: android-builder.md
