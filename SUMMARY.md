@@ -43,4 +43,4 @@
 * [SmartTab](smarttab/smarttab.md)
 * [Branded asset editor](asset-editor/asset-editor.md)
 * [Trivver app](trivver-app/trivver-app.md)
-* [Glossary](Glossary.md)
+* [Glossary](GLOSSARY.md)
